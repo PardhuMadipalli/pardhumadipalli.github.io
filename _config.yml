@@ -29,7 +29,7 @@ github_username:  PardhuMadipalli
 
 
 # Build settings
-theme: minima
+theme: cayman
 plugins:
   - jekyll-feed
 
