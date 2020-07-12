@@ -4,3 +4,6 @@
 
 layout: home
 ---
+### I'm placing this in root directory
+
+## Let's see now
