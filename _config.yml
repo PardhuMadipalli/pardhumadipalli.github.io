@@ -21,7 +21,7 @@
 title: Pardhu Madipalli Resume
 email: pardhu1212@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-Working as a full-stack software developer for 2 years at Oracle. I am proficient in languages like Java, JS and Cloud technologies like Docker and Terraform.
+  Working as a full-stack software developer for 2 years at Oracle. I am proficient in languages like Java, JS and Cloud technologies like Docker and Terraform.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pardhumadipalli
