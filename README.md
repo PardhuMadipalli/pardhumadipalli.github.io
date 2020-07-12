@@ -1,2 +1,1 @@
-# pardhumadipalli.github.io
-Just for testing
+## This is a Readme file
