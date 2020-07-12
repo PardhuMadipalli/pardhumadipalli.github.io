@@ -4,7 +4,6 @@
 
 layout: home
 ---
-### Resume
 
-#### Summary
+### Summary
 I have been working as a full-stack software developer for 2 years. I am proficient in languages like Java, JS and in cloud technlogies like Docker, Terraform and Packer.
