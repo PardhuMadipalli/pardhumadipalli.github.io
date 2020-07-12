@@ -4,6 +4,6 @@
 
 layout: home
 ---
-### I'm placing this in root directory
+### Resume
 
-## Let's see now
+## I have been working as a full-stack software developer for 2 years.
