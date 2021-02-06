@@ -153,17 +153,23 @@ body {
   }
 }
 
-.page-two-column {
-  padding: 10px;
+//
+// Use two columns only on desktop. Not on mobile devices
+//
 
-  &:first-child {
-    float: left;
-    width: 60%;
-  }
+@media screen and (min-width: 380px) {
+  .page-two-column {
+    padding: 10px;
 
-  &:last-child {
-    float: right;
-    width: 30%;
+    &:first-child {
+      float: left;
+      width: 60%;
+    }
+
+    &:last-child {
+      float: right;
+      width: 30%;
+    }
   }
 }
 
@@ -171,6 +177,16 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+.time-period {
+  float: right;
+}
+
+.box-around-heading {
+  border: 2px groove #2D86FB;
+  padding: 0.5em;
+  text-align: center;
 }
 
 td.supports { color: $green-500;  }
