@@ -157,7 +157,7 @@ body {
 // Use two columns only on desktop. Not on mobile devices
 //
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 64em) {
   .page-two-column {
     padding: 10px;
 
