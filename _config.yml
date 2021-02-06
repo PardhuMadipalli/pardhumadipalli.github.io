@@ -1,18 +1,101 @@
-# Setup
-title:        Pardhu Madipalli
-tagline:      A full-stack cloud developer with more than 2 years of experience.
-baseurl:      ""
-paginate:     1
-locale:       "en"
+# global settings
+title: "GitHub and Government"
+description: "GitHub helps government build software better, together"
+permalink: "/stories/:title"
+url: https://government.github.com
+relative_permalinks: false
 
-# About/contact
-author:
-  name:       Pardhu Madipalli
-  email:      pardhu1212@gmail.com
-
-# Gems
-gems:
-  - jekyll-paginate
-
-#Others
+# build settings
+exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
 markdown: kramdown
+plugins:
+  - jekyll-avatar
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-sitemap
+  - jekyll-octicons
+
+sass:
+  style: :compressed
+  # Where you keep your scss files
+  sass_dir: assets/css/
+  # Where sass should look for other scss
+  load_paths:
+    - node_modules/
+
+# orgs on front page
+featured_orgs:
+  - gcba
+  - nla
+  - GeoscienceAustralia
+  - qld-gov-au
+  - onroerenderfgoed
+  - geobolivia
+  - dadosgovbr
+  - tisorocaba
+  - canada-ca
+  - wet-boew
+  - e-gob
+  - City-of-Helsinki
+  - itschool
+  - linz
+  - govph
+  - commonwealth-of-puerto-rico
+  - The-Municipality-of-Staffanstorp
+  - malmostad
+  - ogdch
+  - alv-ch
+  - city-of-bloomington
+  - cityofchattanooga
+  - cityofnewyork
+  - Honolulu
+  - mnhrc
+  - NYCComptroller
+  - ArlingtonCounty
+  - sfcta
+  - olcf
+  - ORNL
+  - azgs
+  - nysenate
+  - State-of-Arizona
+  - alphagov
+  - BarnsleyCouncil
+  - BristolCityCouncil
+  - cabinetoffice
+  - datagovuk
+  - dfid
+  - east-sussex-county-council
+  - hmrc
+  - MetOffice
+  - 18f
+  - CA-CST-SII
+  - cfpb
+  - cooperhewitt
+  - erdc
+  - fda
+  - gsa
+  - hhs
+  - nasa
+  - USDeptVeteransAffairs
+  - virtual-world-framework
+  - whitehouse
+  - bundestag
+  - CodeandoMexico
+  - codeforeurope
+  - dataviz
+  - dobtco
+  - KoelnAPI
+  - mysociety
+  - openva
+  - postcode
+  - sunlightlabs
+  - theodi
+  - codeforamerica
+  - codeforaustralia
+  - okfngr
+  - okfn
+  - nuknightlab
+  - dssg
+  - codeforboston
+  - teampopong
