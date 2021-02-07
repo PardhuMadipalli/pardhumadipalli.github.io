@@ -137,10 +137,11 @@ body {
 
 .skills-table {
   margin-left: 5%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 
   td {
-    padding: 3%;
+    padding-right: 0.5em;
+    padding-bottom: 0.7em;
   }
 }
 
@@ -167,6 +168,7 @@ body {
     }
 
     &:last-child {
+      position: sticky;
       float: right;
       width: 30%;
     }
@@ -187,6 +189,50 @@ body {
   border: 2px groove #2D86FB;
   padding: 0.5em;
   text-align: center;
+}
+
+.rounded-border {
+  border-radius: 5em;
+  border: 2px solid #2D86FB;
+  padding: 5px;
+  text-align: center;
+}
+
+.cat {
+  text-align: center;
+
+  a {
+    width: 6em;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+  100% {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.highhigh{
+  animation: fade-up 500ms ease-in-out;
+}
+
+.hide-elem {
+  display: none;
 }
 
 td.supports { color: $green-500;  }
