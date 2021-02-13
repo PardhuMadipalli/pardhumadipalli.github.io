@@ -1,18 +1,30 @@
-# Setup
-title:        Pardhu Madipalli
-tagline:      A full-stack cloud developer with more than 2 years of experience.
-baseurl:      ""
-paginate:     1
-locale:       "en"
+# global settings
+title: Pardhu Madipalli
+description: "Profile of Pardhu Madipalli"
+url: https://pardhumadipalli.github.io
+locale: "en"
+relative_permalinks: false
 
 # About/contact
 author:
   name:       Pardhu Madipalli
   email:      pardhu1212@gmail.com
 
-# Gems
-gems:
-  - jekyll-paginate
-
-#Others
+# build settings
+exclude: ["script", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
 markdown: kramdown
+plugins:
+  - jekyll-avatar
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-sitemap
+  - jekyll-octicons
+
+sass:
+  style: :compressed
+  # Where you keep your scss files
+  sass_dir: assets/css/
+  # Where sass should look for other scss
+  load_paths:
+    - node_modules/
