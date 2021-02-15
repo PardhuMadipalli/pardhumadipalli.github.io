@@ -7,14 +7,25 @@ relative_permalinks: false
 
 # About/contact
 author:
-  name:       Pardhu Madipalli
-  email:      pardhu1212@gmail.com
+  name: Pardhu Madipalli
+  email: pardhu1212@gmail.com
+
+twitter:
+  username: pardhumadipalli
+  card: summary
+
+social:
+  name: Pardhu Madipalli
+  links:
+    - https://twitter.com/pardhumadipalli
+    - https://www.facebook.com/pardhu1212
+    - https://www.linkedin.com/in/pardhumadipalli
+    - https://github.com/PardhuMadipalli
 
 # build settings
 exclude: ["script", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
 markdown: kramdown
 plugins:
-  - jekyll-avatar
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-coffeescript

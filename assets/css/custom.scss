@@ -22,6 +22,20 @@ body {
   max-width: 280px;
 }
 
+.header-logo {
+  font-family: 'Monoton', Monoton, serif;
+  font-size: 2rem;
+  color:#fff;
+  text-decoration: none !important;
+}
+
+.Box-project {
+  background-color:#fff;
+  border:1px solid #d1d5da;
+  border-radius:3px;
+  padding: 1rem;
+}
+
 .fill-blue { fill: $blue; }
 .fill-green { fill: $green; }
 .fill-green-dark { fill: #006400}
@@ -167,7 +181,6 @@ body {
     }
 
     &:last-child {
-      position: sticky;
       float: right;
       width: 30%;
     }
@@ -190,11 +203,23 @@ body {
   text-align: center;
 }
 
+.box-around-logo {
+  border: 2px groove white;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  text-align: center;
+}
+
 .rounded-border {
   border-radius: 5em;
   border: 2px solid #2D86FB;
   padding: 5px;
   text-align: center;
+}
+
+.title-text {
+  padding-left: 3rem;
+  font-size: 3rem;
 }
 
 .cat {
@@ -234,6 +259,17 @@ body {
   display: none;
 }
 
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+}
+
+.vertical-middle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 td.supports { color: $green-500;  }
 td.not-applicable { color: $gray-500; }
 td.supports-with-exceptions { color: $orange-500; }
@@ -263,6 +299,22 @@ td.does-not-support { color: $red-500; }
   &:active {
     @include btn-transparent-active;
   }
+}
+
+.footer-logo {
+  font-size: 1em;
+  text-decoration: none !important;
+  border-radius: 50%;
+  background-color: #0366d6;
+  color: white;
+  padding: 0.5em;
+  font-family: 'Monoton', Monoton, serif;
+  border: 2px solid white;
+}
+
+.social-button {
+  width: 2em;
+  height: auto;
 }
 
 //
