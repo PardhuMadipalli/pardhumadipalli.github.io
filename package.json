@@ -1,24 +1,18 @@
 {
-  "name": "government.github.com",
+  "name": "pardhumadipalli.github.io",
   "version": "1.0.0",
-  "description": "![screenshot](assets/img/screenshot.png)",
+  "description": "Profile of Pardhu Madipalli",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github/government.github.com.git"
+    "url": "git+https://github.com/PardhuMadipalli/pardhumadipalli.github.io.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/github/government.github.com/issues"
+    "url": "https://github.com/PardhuMadipalli/pardhumadipalli.github.io/issues"
   },
-  "homepage": "http://government.github.com",
+  "homepage": "https://pardhumadipalli.github.io",
   "dependencies": {
     "octicons": "^5.0.1",
     "primer-core": "^6.2.0",
