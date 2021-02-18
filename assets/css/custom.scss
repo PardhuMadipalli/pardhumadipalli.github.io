@@ -243,6 +243,20 @@ body {
   }
 }
 
+.footer-li {
+  display: inline-block;
+  @media screen and (min-width: 64em){
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  text-align: center;
+}
+
+.footer-a {
+  text-align: center;
+  padding: 6px;
+}
+
 .cat {
   text-align: center;
 
@@ -341,7 +355,7 @@ td.does-not-support { color: $red-500; }
 }
 
 .social-button {
-  width: 2em;
+  width: 2rem;
   height: auto;
 }
 
