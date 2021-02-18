@@ -24,15 +24,20 @@
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
 
   <div class="page-header pt-5 pb-5">
-    <div class="container-xl vertical-center">
-        <a class="header-logo box-around-logo" href="/">PM</a>
-          <span class="text-white title-text">{{ page.title }}</span>
-          <span class="float-right text-white vertical-middle">
-              <a href="/education" class="text-white px-md-2" >Education</a>
-              <a href="/software" class="text-white px-md-2" style="vertical-align:middle;">Work</a>
-              <a href="/projects" class="text-white px-md-2" style="vertical-align:middle;">Projects</a>
-              <a href="/volunteering" class="text-white px-md-2" style="vertical-align:middle;">Volunteering</a>
-          </span>
+    <div class="header-container vertical-center text-center--only-mobile">
+        <a class="header-logo text-center" href="/">PM</a>
+        <br class="only-if-mobile">
+        <span class="text-white title-text">{{ page.title }}</span>
+        <br class="only-if-mobile">
+        <span class="float-right--not-mobile text-white vertical-middle">
+          <a href="/education" class="text-white px-md-2" >Education</a>
+            <span class="only-if-mobile">|</span>
+          <a href="/software" class="text-white px-md-2" >Work</a>
+            <span class="only-if-mobile">|</span>
+          <a href="/projects" class="text-white px-md-2" >Projects</a>
+            <span class="only-if-mobile">|</span>
+          <a href="/volunteering" class="text-white px-md-2" >Volunteering</a>
+        </span>
     </div>
   </div>
     <!-- .full-width here gets closed on support-page.html and home.html layouts -->
