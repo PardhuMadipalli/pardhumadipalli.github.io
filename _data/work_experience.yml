@@ -1,0 +1,38 @@
+
+experiences:
+  - company: Oracle
+    location: Bangalore, India
+    link: https://www.oracle.com/
+    roles:
+      - title: Senior Member Technical Staff
+        duration: August 2020 - Current
+      - title: Member Technical Staff
+        duration: July 2018 - July 2020
+    projects:
+      - title: GoldenGate Cloud Services
+        duration: June 2020 - Current
+        tasks:
+          - desc: My task is to help in providing Oracle Goldengate, a database replication service, as a cloud native offering on Oracle Cloud.
+          - desc: I work with technologies like Terraform and Packer to provision infrastructure on the cloud.
+          - desc: Use Oracle internal technologies like Shepherd (a pretty Terraform) for CI/CD of the service.
+          - desc: Write integration test codes with frameworks such as Cucumber and manage them with CI/CD pipeline tools like Teamcity, Jenkins.
+      - title: Oracle Stream Analytics
+        duration: July 2018 - May 2020
+        tasks:
+          - desc: Developing end to end features and resolving critical bugs in the web application.
+          - desc: Manage both web server and client side development work like optimizing web application, enhancing user experience (UX).
+          - desc: With cloud infrastructure tools like Terraform and Packer, I played a significant role in providing OSA as a standalone Oracle Cloud Marketplace offering.
+          - desc: Work on developing docker images for various components of the product and attain sound knowledge of containerization technologies like Docker.
+          - desc: As a part of a Big Data analytics team, I have basic knowledge in Big Data tools like Apache Kafka, Spark, HDFS, MapReduce and YARN.
+  - company: Samsung R&D
+    location: Bangalore, India
+    link: https://research.samsung.com/sri-b
+    roles:
+      - title: Summer Intern
+        duration: May 2017 - June 2017
+    projects:
+      - title: Grid Anti Shading
+        duration: May 2017 - June 2017
+        tasks:
+          - desc: The task is to develop a method to reduce lens shading(due to which colours distort in the corners in images) in Samsung mobile cameras.
+          - desc: The developed method was implemented in Python.

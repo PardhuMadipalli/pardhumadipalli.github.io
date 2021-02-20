@@ -3,6 +3,9 @@ layout: home
 title: Software Development
 description: A full stack cloud developer with an experience of 2 years 7 months
 permalink: /software
+menu: true
+menuname: Work
+menuorder: 1
 ---
 </div><!-- ends .full-width that started in header.html -->
 <section>
@@ -12,140 +15,43 @@ permalink: /software
       Work Experience
     </h2>
     <br>
-    <p><span style="font-size: 200%; line-height: 2.5"><a href="https://www.oracle.com">Oracle</a></span>&nbsp;&nbsp;&nbsp;&nbsp;Bangalore, India</p>
+    {% for experience in site.data.work_experience.experiences %}
+    <p><span style="font-size: 200%; line-height: 2.5"><a href={{experience.link}}>{{experience.company}}</a></span>&nbsp;&nbsp;&nbsp;&nbsp;{{experience.location}}</p>
     <ul style="list-style-type: none"><span style="font-size: 150%">Roles</span>
+      {% for role in experience.roles %}
       <li style="margin: 5%">
-        <span style="color: #2D86FB;"><b>Senior Member Technical Staff</b></span>
-        <span class="time-period">August 2020 - Current</span>
+        <span style="color: #2D86FB;"><b>{{role.title}}</b></span>
+        <span class="time-period">{{role.duration}}</span>
       </li>
-      <li style="margin: 5%">
-        <span style="color: #2D86FB;"><b>Member Technical Staff</b></span>
-        <span class="time-period">July 2018 - July 2020</span>
-      </li>
+      {% endfor %}
     </ul>
     <ul style="list-style-type: none"><span style="font-size: 150%">Projects</span>
+      {% for project in experience.projects %}
       <li style="margin: 5%">
-        <span style="color: #2D86FB;"><b>GoldenGate Cloud Services</b></span>
-        <span class="time-period">June 2020 - Current</span>
+        <span style="color: #2D86FB;"><b>{{project.title}}</b></span>
+        <span class="time-period">{{project.duration}}</span>
         <div class="d-md-flex text-gray">
           <div class="col-md-10 pr-md-4">
             <p></p>
+            {% for task in project.tasks %}
             <div class="d-flex mb-2">
               <div class="mr-2">
                 {% octicon check width:18 class:"fill-green" aria-label:check %}
               </div>
               <p class="">
-                My task is to help in providing Oracle Goldengate, a database replication service, as a cloud native offering on Oracle Cloud.
+                {{task.desc}}
               </p>
             </div>
-            <div class="d-flex mb-2">
-              <div class="mr-2">
-                {% octicon check width:18 class:"fill-green" aria-label:check %}
-              </div>
-              <p class="">
-                I work with technologies like Terraform and Packer to provision infrastructure on the cloud.
-              </p>
-            </div>
-            <div class="d-flex mb-2">
-              <div class="mr-2">
-                {% octicon check width:18 class:"fill-green" aria-label:check %}
-              </div>
-              <p class="">
-                Use Oracle internal technologies like Shepherd (a pretty Terraform) for CI/CD of the service.
-              </p>
-            </div>
-            <div class="d-flex mb-2">
-              <div class="mr-2">
-                {% octicon check width:18 class:"fill-green" aria-label:check %}
-              </div>
-              <p class="testing">
-                Write integration test codes with frameworks such as Cucumber and manage them with CI/CD pipeline tools like Teamcity, Jenkins.
-              </p>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </li>
-      <li style="margin: 5%"><span style="color: #2D86FB;"><b>Oracle Stream Analytics</b></span>
-        <span class="time-period">July 2018 - May 2020</span>
-        <div class="col-md-10 pr-md-4">
-          <p></p>
-          <div class="d-flex mb-2">
-            <div class="mr-2">
-              {% octicon check width:18 class:"fill-green" aria-label:check %}
-            </div>
-            <p class="">
-              Developing end to end features and resolving critical bugs in the web application.
-            </p>
-          </div>
-          <div class="d-flex mb-2">
-            <div class="mr-2">
-              {% octicon check width:18 class:"fill-green" aria-label:check %}
-            </div>
-            <p class="">
-              Manage both web server and client side development work like optimizing web application, enhancing user experience(UX).
-            </p>
-          </div>
-          <div class="d-flex mb-2">
-            <div class="mr-2">
-              {% octicon check width:18 class:"fill-green" aria-label:check %}
-            </div>
-            <p class="">
-              With cloud infrastructure tools like Terraform and Packer, I played a significant role in providing OSA as a standalone Oracle Cloud Marketplace offering.
-            </p>
-          </div>
-          <div class="d-flex mb-2">
-            <div class="mr-2">
-              {% octicon check width:18 class:"fill-green" aria-label:check %}
-            </div>
-            <p class="">
-              Work on developing docker images for various components of the product and attain sound knowledge of containerization technologies like Docker.
-            </p>
-          </div>
-          <div class="d-flex mb-2">
-            <div class="mr-2">
-              {% octicon check width:18 class:"fill-green" aria-label:check %}
-            </div>
-            <p>
-              As a part of a Big Data analytics team, I have basic knowledge in Big Data tools like Apache Kafka, Spark, HDFS, MapReduce and YARN.
-            </p>
-          </div>
-        </div>
-      </li>
+      {% endfor %}
     </ul>
-    <p><span style="font-size: 200%; line-height: 2.5"><a href="https://research.samsung.com/sri-b">Samsung R&D</a></span>&nbsp;&nbsp;&nbsp;&nbsp;Bangalore, India</p>
-    <ul style="list-style-type: none"><span style="font-size: 150%">Role</span>
-      <li style="margin: 5%">
-        <span style="color: #2D86FB;"><b>Summer Intern</b></span>
-        <span class="time-period">May 2017 - June 2017</span>
-      </li>
-    </ul>
-    <ul style="list-style-type: none"><span style="font-size: 150%">Project</span>
-      <li style="margin: 5%">
-        <span style="color: #2D86FB;"><b>Grid Anti Shading</b></span>
-        <div class="d-md-flex text-gray">
-          <div class="col-md-10 pr-md-4">
-            <p></p>
-            <div class="d-flex mb-2">
-              <div class="mr-2">
-                {% octicon check width:18 class:"fill-green" aria-label:check %}
-              </div>
-              <p class="">
-                The task is to develop a method to reduce lens shading(due to which colours distort in the corners in images) in Samsung mobile cameras.
-              </p>
-            </div>
-            <div class="d-flex mb-2">
-              <div class="mr-2">
-                {% octicon check width:18 class:"fill-green" aria-label:check %}
-              </div>
-              <p class="lang">
-                The developed method was implemented in Python.
-              </p>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
+    {% endfor %}
   </div>
+
+
   <div class="mb-3 mb-md-5 col-md-4 page-two-column">
     <h2 class="alt-h2 box-around-heading">
       Skills
