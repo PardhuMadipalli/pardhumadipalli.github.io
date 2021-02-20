@@ -16,4 +16,6 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         docker run --rm \
-        -v ${{ github.workspace }}:/srv/jekyll bundle install && bundle exec jekyll build
+        -v ${{ github.workspace }}:/srv/jekyll \
+        jekyll/builder \
+        bundle install && bundle exec jekyll build
