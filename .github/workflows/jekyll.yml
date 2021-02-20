@@ -9,9 +9,9 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
 
     steps:
     - uses: actions/checkout@v2
     - name: Build the site in the jekyll/builder container
-      run: bundle exec jekyll build
+      run: jekyll build
