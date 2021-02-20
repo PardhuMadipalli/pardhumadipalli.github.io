@@ -18,4 +18,4 @@ jobs:
         docker run --rm \
         -v ${{ github.workspace }}:/srv/jekyll \
         jekyll/jekyll \
-        /bin/bash -c "chmod 777 /srv/jekyll && bundle install && bundle exec jekyll build"
+        /bin/bash -c "chmod 777 -R /srv/jekyll && bundle install && bundle exec jekyll build"
