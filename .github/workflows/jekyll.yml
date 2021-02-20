@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: Jekyll Build
 
 on:
   push:
@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
+    - name: Build the site using jekyll/jekyll docker
       run: |
         docker run --rm \
         -v ${{ github.workspace }}:/srv/jekyll \
-        jekyll/builder \
+        jekyll/jekyll \
         /bin/bash -c "bundle install && bundle exec jekyll build"
