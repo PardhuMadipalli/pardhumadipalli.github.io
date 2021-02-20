@@ -1,0 +1,19 @@
+name: Jekyll Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  Jekyll-Build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site using jekyll/jekyll docker
+      run: |
+        docker run --rm \
+        -v ${{ github.workspace }}:/srv/jekyll \
+        jekyll/jekyll \
+        /bin/bash -c "chmod 777 -R /srv/jekyll && bundle install && bundle exec jekyll build"
