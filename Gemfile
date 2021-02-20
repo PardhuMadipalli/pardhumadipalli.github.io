@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'github-pages', '> 103', group: :jekyll_plugins
+gem 'github-pages', '>= 212', group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem 'jekyll-octicons'

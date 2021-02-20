@@ -3,49 +3,29 @@ layout: home
 title: Projects
 description: Software and image processing projects
 permalink: /projects
+menu: true
+menuname: Projects
+menuorder: 3
 ---
 </div><!-- ends .full-width that started in header.html -->
 
 <div class="container-lg p-responsive">
   <div class="clearfix gutter-lg-spacious">
+    {% for project in site.data.projects.projects %}
     <br>
     <div class="col-md-7 Box-project" style="margin: auto">
       <h2 class="alt-h3 mb-2">
         {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
-        Image segmentation using WDO
+        {{ project.title }}
       </h2>
       <p class="text-gray">
-        Fully automatic Common Carotid Artery ultrasound image segmentation using Wind Driven Optimization technique.
+        {{ project.description }}
       </p>
       <p class="text-center">
-        <a href="/image-segmentation-using-wdo" class="btn btn-outline" target="_blank">Image Segmentation using WDO</a>
+        <a href="{{ project.link }}" class="btn btn-outline" target="_blank">{{ project.title }}</a>
       </p>
     </div>
     <br>
-    <br>
-    <div class="col-md-7 Box-project" style="margin: auto">
-      <h2 class="alt-h3 mb-2">
-        {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
-        Image segmentation using AWDO
-      </h2>
-      <p class="text-gray">
-        Fully automatic segmentation of ultrasound common carotid artery images using Adaptive Wind Driven Optimisation
-      </p>
-      <p class="text-center">
-        <a href="/image-segmentation-using-awdo" class="btn btn-outline" target="_blank">Image Segmentation using AWDO</a>
-      </p>
-    </div>
-    <br>
-    <br>
-    <div class="col-md-7 Box-project" style="margin: auto">
-      <h2 class="alt-h3 mb-2">
-        {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
-        Kafka SSL broker with docker
-      </h2>
-      <p class="text-gray">A project based on shell scripting to create a kafka docker container with SSL enabled using a single command.</p>
-      <p class="text-center">
-        <a href="/kafka-ssl-docker" class="btn btn-outline">Kafka SSL with docker</a>
-      </p>
-    </div>
+    {% endfor %}
   </div>
 </div>

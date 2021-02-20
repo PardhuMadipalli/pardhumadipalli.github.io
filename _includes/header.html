@@ -30,13 +30,13 @@
         <span class="text-white title-text">{{ page.title }}</span>
         <br class="only-if-mobile">
         <span class="float-right--not-mobile text-white vertical-middle">
-          <a href="/education" class="text-white px-md-2" >Education</a>
+            {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
+            {% for page in sorted_list %}
+            <a href="{{ page.permalink }}" class="text-white px-md-2" >{{ page.menuname }}</a>
+            {% if page.menuorder != sorted_list.size %}
             <span class="only-if-mobile">|</span>
-          <a href="/software" class="text-white px-md-2" >Work</a>
-            <span class="only-if-mobile">|</span>
-          <a href="/projects" class="text-white px-md-2" >Projects</a>
-            <span class="only-if-mobile">|</span>
-          <a href="/volunteering" class="text-white px-md-2" >Volunteering</a>
+            {% endif %}
+            {% endfor %}
         </span>
     </div>
   </div>
