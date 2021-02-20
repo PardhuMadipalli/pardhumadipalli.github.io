@@ -18,4 +18,4 @@ jobs:
         docker run --rm \
         -v ${{ github.workspace }}:/srv/jekyll \
         jekyll/builder \
-        bundle install && bundle exec jekyll build
+        /bin/bash -c "bundle install && bundle exec jekyll build"
