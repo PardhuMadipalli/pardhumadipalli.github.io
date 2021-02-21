@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
     - name: Build the site using jekyll/jekyll docker
-      run: |
-        docker run --rm \
-        -v ${{ github.workspace }}:/srv/jekyll \
-        jekyll/jekyll \
-        /bin/bash -c "chmod 777 -R /srv/jekyll && bundle install && bundle exec jekyll build"
+      run: bundle exec jekyll build
+
