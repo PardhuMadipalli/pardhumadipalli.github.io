@@ -16,5 +16,5 @@ jobs:
       with:
         bundler-cache: true
     - name: Build the site using jekyll/jekyll docker
-      run: bundle exec jekyll build
+      run: pwd && ls -lrt && bundle exec jekyll build
 
