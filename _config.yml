@@ -29,7 +29,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-coffeescript
-  - jekyll-sitemap
   - jekyll-octicons
 
 sass:
@@ -42,4 +41,4 @@ sass:
 
 webrick:
   headers:
-    Cache-Control: max-age=432000
+    Cache-Control: max-age=0
