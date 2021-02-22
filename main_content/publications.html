@@ -1,0 +1,32 @@
+---
+layout: home
+title: Publications
+description: Journal and Conference publications
+permalink: /publications
+menu: true
+menuname: Publications
+menuorder: 4
+---
+
+</div>
+
+<div class="clearfix gutter-spacious">
+    <div class="container-lg p-responsive">
+    {% for pub in site.data.publications.publications %}
+        <div class="Box clearfix p-4 p-sm-5 col-md-7 mx-auto mt-6">
+            <div class="float-left">
+                <a href="{{ pub.paperlink | relative_url }}" target="_blank">
+                    <img class="d-block pr-4" style="width: 80px;" alt="{{ pub.logoalt }}" src="{{ pub.publisherlogo | relative_url }}">
+                </a>
+            </div>
+            <div class="overflow-hidden">
+                <p> {{ pub.title }}
+                </p>
+                <a href="{{ pub.doclink | relative_url }}">Learn More{% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
+                <p></p>
+                <a href="{{ pub.paperlink | relative_url }}" target="_blank">Paper{% octicon chevron-right height:18 class:"d-inline fill-blue ml-1" %}</a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>

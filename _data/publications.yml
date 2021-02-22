@@ -1,0 +1,13 @@
+
+publications:
+  - title: Segmentation of intima media complex from carotid ultrasound images using wind driven optimization technique
+    doclink: /image-segmentation-using-wdo
+    paperlink: https://www.sciencedirect.com/science/article/abs/pii/S174680941730174X
+    publisherlogo: /assets/img/elsevier.webp
+    logoalt: Elsevier Logo
+
+  - title: Automatic Segmentation of Intima Media Complex in Common Carotid Artery using Adaptive Wind Driven Optimization
+    doclink: /image-segmentation-using-awdo
+    paperlink: https://ieeexplore.ieee.org/document/8600240
+    publisherlogo: /assets/img/ieee.webp
+    logoalt: IEEE Logo
