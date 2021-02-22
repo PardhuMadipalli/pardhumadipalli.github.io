@@ -17,5 +17,6 @@ assets/vendor/bootstrap-sass/assets/javascripts/
 .env
 .jekyll-metadata
 tmp/
-
+_posts/*
+assets/img/favicon_io*
 unclassified/
