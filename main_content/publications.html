@@ -14,9 +14,9 @@ menuorder: 4
     <div class="container-lg p-responsive">
     {% for pub in site.data.publications.publications %}
         <div class="Box clearfix p-4 p-sm-5 col-md-7 mx-auto mt-6">
-            <div class="float-left">
+            <div class="float-left pt-5">
                 <a href="{{ pub.paperlink | relative_url }}" target="_blank">
-                    <img class="d-block pr-4" style="width: 80px;" alt="{{ pub.logoalt }}" src="{{ pub.publisherlogo | relative_url }}">
+                    <img class="d-block pr-4" style="width: 90px;" alt="{{ pub.logoalt }}" src="{{ pub.publisherlogo | relative_url }}">
                 </a>
             </div>
             <div class="overflow-hidden">
