@@ -1,0 +1,24 @@
+{
+  "name": "Pardhu Madipalli",
+  "short_name": "Pardhu",
+  "theme_color": "#0366d6",
+  "background_color": "#0366d6",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "https://pardhumadipalli.github.io",
+  "description": "Profile of Pardhu Madipalli",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/assets/img/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/favicon-1210x1210.png",
+      "type": "image/png",
+      "sizes": "1210x1210"
+    }
+  ]
+}
