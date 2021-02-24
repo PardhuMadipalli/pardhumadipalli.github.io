@@ -17,6 +17,28 @@ self.addEventListener("fetch", function(event) {
     event.waitUntil(addToCache(event.request));
 });
 
+self.addEventListener("fetch", function () {
+    console.log('load completed');
+    Notification.requestPermission().then(function(result) {
+        if(result === 'granted') {
+            randomNotification();
+        }
+    });
+})
+
+function randomNotification() {
+    const games = ['pardhu', 'prabhu', 'dad', 'mom'];
+    let randomItem = Math.floor(Math.random()*games.length);
+    let notifTitle = games[randomItem].toLocaleLowerCase();
+    let notifBody = 'Created by '+games[randomItem].toUpperCase()+'.';
+    let notifImg = '/assets/img/favicon.png';
+    let options = {
+        body: notifBody,
+        icon: notifImg
+    }
+    new Notification(notifTitle, options);
+}
+
 var checkResponse = function(request){
     return new Promise(function(fulfill, reject) {
         fetch(request).then(function(response){
