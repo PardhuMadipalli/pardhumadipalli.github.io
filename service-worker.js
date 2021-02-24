@@ -4,6 +4,12 @@ self.addEventListener("install", function(event) {
 
 var preLoad = function(){
     console.log("Installing web app");
+    console.log('load completed');
+    Notification.requestPermission().then(function(result) {
+        if(result === 'granted') {
+            randomNotification();
+        }
+    });
     return caches.open("offline").then(function(cache) {
         console.log("caching index and important routes");
         return cache.addAll(["/", "/software", "/education","/image-segmentation-using-awdo","image-segmentation-using-wdo" ,"/offline.html"]);
