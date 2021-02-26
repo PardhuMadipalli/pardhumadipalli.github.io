@@ -6,7 +6,7 @@ projects:
 
   - title: Image segmentation using AWDO
     description: Fully automatic segmentation of ultrasound common carotid artery images using Adaptive Wind Driven Optimisation.
-    link: /image-segmentation-using-awdo
+    link: /image-segmentation-awdo
 
   - title: Kafka SSL broker with docker
     description: A project based on shell scripting to create a kafka docker container with SSL enabled using a single command.
