@@ -7,7 +7,9 @@ papers:
       - Jeny Rajan
       - P. KrishnaKumar
       - A.V.Narasimhadhana
+    type: Journal
     journal: Biomedical Signal Processing and Control
+    time: February, 2018
     publisher: Elsevier
     link: https://doi.org/10.1016/j.bspc.2017.08.009
     abstract:
@@ -25,3 +27,25 @@ papers:
       ISSN 1746-8094,
       https://doi.org/10.1016/j.bspc.2017.08.009.
       (https://www.sciencedirect.com/science/article/pii/S174680941730174X)
+
+  - title: Fully automatic segmentation of ultrasound common carotid artery images using Adaptive Wind Driven Optimisation
+    authors:
+      - Pardhu Madipalli
+      - Sandeep Kotta
+      - Harish Dadi
+      - Asha C S
+      - A.V.Narasimhadhana
+    type: Conference
+    journal: National Conference on Communications (NCC)
+    time: 25-28 Feb. 2018
+    publisher: IEEE
+    link: https://doi.org/10.1109/NCC.2018.8600240
+    abstract:
+      - Cardiovascular diseases have been one of the leading causes of death and have been increasing in much of the developing world. Atherosclerosis, the accumulation of plaque on artery walls is the major for cardiovascular diseases. This is diagnosed by measuring the thickness of IMC of common carotid artery (CCA) in ultrasound images.
+      - In this paper, we present a completely automatic technique for segmentation of IMC in ultrasound images of CCA. The image is segmented using adaptive wind driven optimization (AWDO) technique. The denoising filter based on Bayesian least square approach and a robust enhancement technique is used in the pre-processing stage.
+      - The proposed method is evaluated on 60 ultrasound images and is compared with the state-of-the-art methods. The experimental results show that the proposed method yields better results as compared to other methods.
+    citation: |
+      P. Madipalli, S. Kotta, H. Dadi, N. Y., A. C.S. and A. V. Narasimhadhan,
+      "Automatic Segmentation of Intima Media Complex in Common Carotid Artery using Adaptive Wind Driven Optimization,"
+      2018 Twenty Fourth National Conference on Communications (NCC), Hyderabad, 2018, pp. 1-6,
+      doi: 10.1109/NCC.2018.8600240.

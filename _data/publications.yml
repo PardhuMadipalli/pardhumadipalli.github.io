@@ -7,7 +7,7 @@ publications:
     logoalt: Elsevier Logo
 
   - title: Automatic Segmentation of Intima Media Complex in Common Carotid Artery using Adaptive Wind Driven Optimization
-    doclink: /image-segmentation-using-awdo
+    doclink: /image-segmentation-awdo
     paperlink: https://ieeexplore.ieee.org/document/8600240
     publisherlogo: /assets/img/ieee.webp
     logoalt: IEEE Logo
