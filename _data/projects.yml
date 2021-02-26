@@ -2,7 +2,7 @@
 projects:
   - title: Image segmentation using WDO
     description: Fully automatic Common Carotid Artery ultrasound image segmentation using Wind Driven Optimization technique.
-    link: /image-segmentation-using-wdo
+    link: /image-segmentation-wdo
 
   - title: Image segmentation using AWDO
     description: Fully automatic segmentation of ultrasound common carotid artery images using Adaptive Wind Driven Optimisation.

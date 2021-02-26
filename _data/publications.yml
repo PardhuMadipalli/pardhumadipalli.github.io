@@ -1,7 +1,7 @@
 
 publications:
   - title: Segmentation of intima media complex from carotid ultrasound images using wind driven optimization technique
-    doclink: /image-segmentation-using-wdo
+    doclink: /image-segmentation-wdo
     paperlink: https://www.sciencedirect.com/science/article/abs/pii/S174680941730174X
     publisherlogo: /assets/img/elsevier.webp
     logoalt: Elsevier Logo
