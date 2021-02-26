@@ -1,0 +1,27 @@
+
+papers:
+  - title: Segmentation of intima media complex from carotid ultrasound images using wind driven optimization technique
+    authors:
+      - Y.Nagaraj
+      - Pardhu Madipalli
+      - Jeny Rajan
+      - P. KrishnaKumar
+      - A.V.Narasimhadhana
+    journal: Biomedical Signal Processing and Control
+    publisher: Elsevier
+    link: https://doi.org/10.1016/j.bspc.2017.08.009
+    abstract:
+      - Cardiovascular diseases are the third leading cause of death worldwide. The primitive indication of the possible onset of a cardiovascular disease is atherosclerosis, which is the accumulation of plaque on the arterial wall.
+      - The intima-media thickness (IMT) of the common carotid artery is an early marker of the development of cardiovascular disease. The computation of the IMT and the delineation of the carotid plaque are significant predictors for the clinical diagnosis of the risk of stroke.
+      - For a robust diagnosis, carotid ultrasound images must be free from speckle noise. To address this problem, we use state-of-the-art despeckling and enhancement methods in this work. Many edge-based methods for IMT estimation have been proposed to overcome the limitations of manual segmentation.
+      - In this paper, we present a fully automated region-of-interest (ROI) extraction and a threshold-based segmentation of the intima media complex (IMC) using a wind driven optimization (WDO) technique. A quantitative evaluation is carried out on 90 carotid ultrasound images of two different datasets. The obtained results are compared with those of state-of-the-art techniques such as a model-based approach, a dynamic programming method, and a snake segmentation method. The experimental analysis shows that the proposed method is robust in measuring the IMT in carotid ultrasound images.
+    citation: |
+      Y. Nagaraj, Pardhu Madipalli, Jeny Rajan, P. Krishna Kumar, A.V. Narasimhadhan,
+      Segmentation of intima media complex from carotid ultrasound images using wind driven optimization technique,
+      Biomedical Signal Processing and Control,
+      Volume 40,
+      2018,
+      Pages 462-472,
+      ISSN 1746-8094,
+      https://doi.org/10.1016/j.bspc.2017.08.009.
+      (https://www.sciencedirect.com/science/article/pii/S174680941730174X)
