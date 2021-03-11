@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="3dVARbglAN37iQky98_XcrhKKQemd16re0YY6kMOkZE" />
     <meta name="theme-color" content="#0366d6">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--     Global site tag (gtag.js) - Google Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPBWW94V7C"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -25,7 +25,8 @@
 
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
 
-  <div class="page-header pt-5 pb-5">
+<header>
+  <div class="page-header pt-3 pb-3">
     <div class="header-container vertical-center text-center--only-mobile">
         <a class="header-logo text-center" href="/">PM</a>
         <br class="only-if-mobile">
@@ -46,4 +47,5 @@
         </span>
     </div>
   </div>
-    <!-- .full-width here gets closed on support-page.html and home.html layouts -->
+</header>
+<main> <!-- must be closed in the footer -->
