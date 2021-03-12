@@ -24,28 +24,56 @@
 </head>
 
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
-
-<header>
-  <div class="page-header pt-3 pb-3">
-    <div class="header-container vertical-center text-center--only-mobile">
-        <a class="header-logo text-center" href="/">PM</a>
-        <br class="only-if-mobile">
-        {% if page.title.size < 25 %}
-        <span class="text-white title-text">{{ page.title }}</span>
-        {% else %}
-        <span class="text-white title-text-small">{{ page.title }}</span>
-        {% endif %}
-        <br class="only-if-mobile">
-        <span class="float-right--not-mobile text-white vertical-middle">
-            {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
-            {% for page in sorted_list %}
-            <a href="{{ page.permalink }}" class="text-white px-md-2" >{{ page.menuname }}</a>
-            {% if page.menuorder != sorted_list.size %}
-            <span class="only-if-mobile">|</span>
-            {% endif %}
-            {% endfor %}
-        </span>
-    </div>
-  </div>
-</header>
+<aside id="sidenav-open">
+    <nav class="bg-blue aside-nav">
+        {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
+        {% for page in sorted_list %}
+        <a href="{{ page.permalink }}" class="text-white pl-md-3 py-4 width-full" >{{ page.menuname }}</a>
+        {% endfor %}
+    </nav>
+    <a href="#" id="sidenav-close" title="Close Menu" aria-label="Close Menu"></a>
+</aside>
 <main> <!-- must be closed in the footer -->
+
+    <header>
+        <div class="page-header pt-3 pb-3">
+            <div class="header-container vertical-center">
+                <!-- Header only for NOT mobile -->
+                <div class="not-mobile">
+                    {% include logo.html %}
+                    {% if page.title.size < 25 %}
+                    <span class="text-white title-text">{{ page.title }}</span>
+                    {% else %}
+                    <span class="text-white title-text-small">{{ page.title }}</span>
+                    {% endif %}
+                    <span class="float-right--not-mobile text-white vertical-middle">
+                        {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
+                        {% for page in sorted_list %}
+                        <a href="{{ page.permalink }}" class="text-white px-md-2" >{{ page.menuname }}</a>
+                        {% endfor %}
+                    </span>
+                </div>
+                 <!-- Header meant only for mobile -->
+                <div class="only-if-mobile">
+                    <div class="parent">
+                        <div>
+                            {% include hamburger.html %}
+                        </div>
+                        <div>
+                            {% include logo.html %}
+                        </div>
+                        <div id="right"></div>
+                    </div>
+                    <div class="header-center text-center">
+                        {% if page.title.size < 25 %}
+                        <span class="text-white title-text">{{ page.title }}</span>
+                        {% else %}
+                        <span class="text-white title-text-small">{{ page.title }}</span>
+                        {% endif %}
+                    </div>
+             </div>
+            </div>
+        </div>
+    </header>
+
+<article>
