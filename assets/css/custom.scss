@@ -1,7 +1,7 @@
 
 $easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);
 $duration: 0.6s;
-$mobileWidth: 400px;
+$mobileWidth: 540px;
 $siteBlue: #0366d6;
 $boxBlue: #2D86FB;
 
@@ -16,6 +16,7 @@ body {
   font-size: 16px;
 
   @media screen and (max-width: $mobileWidth) {
+
     display: grid;
     grid: [stack] 1fr / min-content [stack] 1fr;
 
@@ -31,12 +32,13 @@ body {
 #sidenav-open {
 
   display: grid;
-  grid-template-columns: [nav] 2fr [escape] 1fr;
+  grid-template-columns: [nav] 1fr [escape] 1fr;
 
+  // Non mobile
   @media screen and (min-width: $mobileWidth){
     display: none;
   }
-
+  // Mobile
   @media screen and (max-width: $mobileWidth) {
     position: sticky;
     top: 0;
@@ -44,7 +46,7 @@ body {
     overflow: hidden auto;
     overscroll-behavior: contain;
     visibility: hidden;
-    transform: translateX(-110vw);
+    transform: translateX(-100vw);
     will-change: transform;
     transition: transform $duration $easeOutExpo,visibility 0s linear $duration;
 
@@ -134,6 +136,21 @@ body {
   border:1px solid #d1d5da;
   border-radius:3px;
   padding: 1rem;
+}
+
+.pub-container {
+  $widthVar: 100vw;
+  // Non mobile
+  @media screen and (min-width: $mobileWidth){
+    $widthVar: 80vw;
+  }
+  // Mobile
+  @media screen and (max-width: $mobileWidth) {
+    $widthVar: 85vw;
+  }
+  width: $widthVar;
+  padding-left: (100vw - $widthVar)/2;
+  padding-right: (100vw - $widthVar)/2;
 }
 
 .fill-blue { fill: $blue; }
@@ -311,9 +328,9 @@ body {
 
 .title-text-small {
   font-size: 2rem;
-  @media screen and (min-width: $mobileWidth) {
-    padding-left: 2rem;
-  }
+  //@media screen and (min-width: $mobileWidth) {
+  //  padding-left: 2rem;
+  //}
 }
 
 .footer-li {
@@ -412,4 +429,9 @@ body {
   min-height: 42px;
   font-size: 16px;
   border-radius: 0.25em;
+}
+
+// A hack to keep buttons in the background when sidenav is open
+.btn {
+  position: inherit !important;
 }
