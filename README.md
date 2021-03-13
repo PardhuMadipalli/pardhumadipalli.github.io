@@ -4,4 +4,6 @@
 
 # Pardhu Madipalli profile
 
-Developed with the help of GitHub project [Government Github](https://government.github.com/).
+- Developed using Jekyll
+- Hosted by GitHub
+- Developed with the help of GitHub project [Government Github](https://government.github.com/).
