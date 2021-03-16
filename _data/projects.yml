@@ -1,5 +1,14 @@
 
 projects:
+
+  - title: Kafka SSL broker with docker
+    description: A project based on shell scripting to create a kafka docker container with SSL enabled using a single command.
+    link: /kafka-ssl-docker
+
+  - title: Instagram Insights
+    description: Get best insights like most profitable times to publish posts, best hashtags that can be used which provide highest views and impressions.
+    link: /instagram-insights
+
   - title: Image segmentation using WDO
     description: Fully automatic Common Carotid Artery ultrasound image segmentation using Wind Driven Optimization technique.
     link: /image-segmentation-wdo
@@ -7,7 +16,3 @@ projects:
   - title: Image segmentation using AWDO
     description: Fully automatic segmentation of ultrasound common carotid artery images using Adaptive Wind Driven Optimisation.
     link: /image-segmentation-awdo
-
-  - title: Kafka SSL broker with docker
-    description: A project based on shell scripting to create a kafka docker container with SSL enabled using a single command.
-    link: /kafka-ssl-docker

@@ -19,17 +19,25 @@
     <link rel="icon" type="image/webp" href="/assets/img/android-chrome-192x192.webp" sizes="192x192">
     <link rel="apple-touch-icon" type="image/png" href="/assets/img/apple-touch-icon.png" sizes="180x180">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!--    <link rel="preload" href="/assets/fonts/alliance-no-2-regular.woff2" as="font" type="font/woff2">-->
+<!--    <link rel="preload" href="/assets/fonts/alliance-no-2-medium.woff2" as="font" type="font/woff2">-->
+<!--    <link rel="preload" href="/assets/fonts/alliance-no-2-semibold.woff2" as="font" type="font/woff2">-->
+<!--    <link rel="preload" href="/assets/fonts/alliance-no-2-bold.woff2" as="font" type="font/woff2">-->
+
     <link rel="manifest" href="/asset-manifest.json">
-    <link href="https://fonts.googleapis.com/css?family=Monoton&family=Roboto:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     {% seo %}
 </head>
 
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
 <aside id="sidenav-open">
-    <nav class="bg-blue aside-nav">
+    <nav class="aside-nav bg-header-color">
+        <a href="/" class="text-white pl-md-3 py-4 width-full text-bold" ><img src="/assets/img/home.svg" class="nav-icon">Pardhu Madipalli</a>
+        <hr>
         {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
         {% for page in sorted_list %}
-        <a href="{{ page.permalink }}" class="text-white pl-md-3 py-4 width-full" >{{ page.menuname }}</a>
+        <a href="{{ page.permalink }}" class="text-white pl-md-3 py-4 width-full"><img src="assets/img/{{ page.octiconname }}.svg" class="nav-icon"> {{ page.menuname }}</a>
         {% endfor %}
     </nav>
     <a href="#" id="sidenav-close" title="Close Menu" aria-label="Close Menu"></a>
@@ -37,7 +45,7 @@
 <main> <!-- must be closed in the footer -->
 
     <header>
-        <div class="page-header pt-3 pb-3">
+        <div class="page-header pt-3 pb-3 bg-header-color">
             <div class="header-container vertical-center">
                 <!-- Header only for NOT mobile -->
                 <div class="not-mobile">

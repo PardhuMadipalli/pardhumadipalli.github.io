@@ -1,8 +1,8 @@
 {
   "name": "Pardhu Madipalli",
   "short_name": "Pardhu",
-  "theme_color": "#0366d6",
-  "background_color": "#0366d6",
+  "theme_color": "#161b22",
+  "background_color": "#000000",
   "display": "standalone",
   "scope": "/",
   "start_url": "https://pardhumadipalli.github.io",
