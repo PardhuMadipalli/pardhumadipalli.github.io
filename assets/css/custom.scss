@@ -2,8 +2,24 @@
 $easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);
 $duration: 0.6s;
 $mobileWidth: 540px;
-$siteBlue: #0366d6;
-$boxBlue: #2D86FB;
+
+$colorOne: #BCA1F7;
+$colorTwo: #E577B4;
+$colorThree: #FF7170;
+
+$colorOneDark: darken($colorOne, 15%);
+$colorTwoDark: darken($colorTwo, 15%);
+$colorThreeDark: darken($colorThree, 15%);
+
+$colorOneLight: lighten($colorOne, 10%);
+$colorTwoLight: lighten($colorTwo, 10%);
+$colorThreeLight: lighten($colorThree, 10%);
+
+$multiColoredBg: linear-gradient(92.05deg, #B392F0 10.42%, #EC6CB9 47.91%, #F97583 100%);
+$multiColoredBgLight: linear-gradient(92.05deg, $colorOneLight 10.42%, $colorTwoLight 47.91%, $colorThreeLight 100%);
+$multiColoredBgDark: linear-gradient(92.05deg, $colorOneDark 10.42%, $colorTwoDark 47.91%, $colorThreeDark 100%);
+
+$clipPathPolygon: polygon(0% 0%, 0% 100%, 1% 98%, 1% 6%, 99% 6%, 99% 95%, 0% 95%, 0 100%, 100% 100%, 100% 0%);
 
 @media screen and (prefers-reduced-motion: reduce) {
   #sidenav-open {
@@ -11,10 +27,62 @@ $boxBlue: #2D86FB;
   }
 }
 
-body {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+.main-button {
+  background: linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  svg {
+    fill: #FF7170;
+  }
+  &:hover {
+    opacity: 0.5;
+    svg {
+      margin-left: 4px;
+      transform: scaleX(1.2);
+    }
+  }
+}
 
+.fade-on-hover {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none !important;
+  &:hover {
+    opacity: 0.5;
+    svg {
+      margin-left: 4px;
+      transform: scaleX(1.2);
+    }
+  }
+}
+
+.learn-more-link {
+  letter-spacing: 0.07em;
+  font-size: 13px;
+}
+
+.main-hr {
+  background: #E577B4;
+  height: 5px;
+}
+
+.octicon {
+  fill: white;
+}
+
+.index-heading {
+  font-family: Courier, Arial, sans-serif !important;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  //font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: black;
+  color: white;
   @media screen and (max-width: $mobileWidth) {
     display: grid;
     grid: [stack] 1fr / min-content [stack] 1fr;
@@ -32,6 +100,7 @@ body {
 
   display: grid;
   grid-template-columns: [nav] 1fr [escape] 1fr;
+  z-index: 2;
 
   // Non mobile
   @media screen and (min-width: $mobileWidth){
@@ -85,9 +154,16 @@ body {
 .aside-nav {
   flex-direction: column;
   display: inline-flex;
-  padding-left: 2rem;
-  padding-top: 20vh;
-  width: 50vw;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 15vh;
+  width: 70vw;
+  z-index: 3;
+}
+
+.nav-icon {
+  padding-top: 15px;
+  padding-right: 15px;
 }
 
 
@@ -97,13 +173,10 @@ body {
 
 .page-header {
   width: 100%;
-  background-color: $siteBlue;
-  -webkit-transition: background-image 0.6s ease-in-out 0s;
-  -moz-transition: background-image 0.6s ease-in-out 0s;
-  -o-transition: background-image 0.6s ease-in-out 0s;
-  transition: background-image 0.6s ease-in-out 0s;
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.bg-header-color {
+  background-color: #161b22;
 }
 
 .logo {
@@ -132,11 +205,55 @@ body {
 }
 
 .Box-project {
-  background-color:$white;
-  border:1px solid #d1d5da;
-  border-radius:3px;
-  padding: 1rem;
+  padding: 1.5rem;
+  position: relative;
+  border: 25px solid transparent;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: black;
+    z-index: -1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity .3s ease-in-out;
+    backface-visibility: hidden;
+    width: calc(100% - 4px);
+    height:calc(100% - 4px);
+  }
+
+  &:after {
+    background-image: $multiColoredBg;
+    //clip-path: polygon(0% 0%, 0% 100%, 1% 99%, 1% 1%, 99% 1%, 99% 99%, 0% 99%, 0 100%, 100% 100%, 100% 0%);
+    background-position: 50% 50%;
+    background-size: 100%;
+    //clip-path: polygon(0% 0%, 0% 100%, 2% 96%, 2% 6%, 98% 6%, 98% 95%, 0% 95%, 0 100%, 100% 100%, 100% 0%);
+    z-index: -2;
+    position: absolute;
+    transition: opacity .3s ease-in-out;
+    backface-visibility: hidden;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  &.fill-on-hover{
+    &:hover, &::selection {
+      background: $multiColoredBgDark !important;
+      clip-path: none;
+      backface-visibility: hidden;
+
+      &:before {
+        height: 0;
+        width: 0;
+      }
+    }
+  }
 }
+
 
 .pub-container {
   $widthVar: 100vw;
@@ -153,10 +270,27 @@ body {
   padding-right: (100vw - $widthVar)/2;
 }
 
+.text-color-light-blue {
+  color: #58a6ff;
+}
+
+.text-color-one {
+  color: #BCA1F7;
+}
+.text-color-two {
+  color:  #E577B4;
+}
+
+.text-color-three {
+  color: $colorThree;
+  svg {
+    fill: $colorThree;
+  }
+}
 
 .fill-blue { fill: $blue; }
 .fill-green { fill: $green; }
-
+.fill-light-green { fill: #66ff00; }
 
 /* Animations */
 /* -------------------------------------------------------------------------- */
@@ -308,16 +442,21 @@ body {
 }
 
 .box-around-heading {
-  border: 2px groove $boxBlue;
   padding: 0.2em;
   text-align: center;
-}
+  position: relative;
+  &:after {
+    background: $multiColoredBg;
+    clip-path: polygon(0% 0%, 0% 100%, 1% 98%, 1% 6%, 99% 6%, 99% 95%, 0% 95%, 0 100%, 100% 100%, 100% 0%);
+    //clip-path: polygon(0% 0%, 0% 100%, 2% 96%, 2% 6%, 98% 6%, 98% 95%, 0% 95%, 0 100%, 100% 100%, 100% 0%);
 
-.rounded-border {
-  border-radius: 5em;
-  border: 2px solid $boxBlue;
-  padding: 5px;
-  text-align: center;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
 }
 
 .title-text {
@@ -331,18 +470,32 @@ body {
   font-size: 2rem;
 }
 
-.footer-li {
-  display: inline-block;
-  @media screen and (min-width: $mobileWidth){
-    padding-left: 2em;
-    padding-right: 2em;
+footer {
+
+  li {
+    display: inline-block;
+    @media screen and (min-width: $mobileWidth){
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    text-align: center;
+    a {
+      padding: 6px;
+    }
   }
-  text-align: center;
+}
+
+.footer-li {
+  //display: inline-block;
+  //@media screen and (min-width: $mobileWidth){
+  //  padding-left: 2em;
+  //  padding-right: 2em;
+  //}
+  //text-align: center;
 }
 
 .footer-a {
   text-align: center;
-  padding: 6px;
 }
 
 .cat {
@@ -350,6 +503,14 @@ body {
 
   a {
     width: 6em;
+    background-color: black !important;
+    background-image: none !important;
+    color: white !important;
+    border: 1px groove white;
+    //clip-path: polygon(0% 0%, 0% 100%, 1% 98%, 1% 6%, 99% 6%, 99% 95%, 0% 95%, 0 100%, 100% 100%, 100% 0%);
+    &:hover, &::selection {
+      background: $multiColoredBg !important;
+    }
   }
 }
 

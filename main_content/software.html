@@ -6,6 +6,7 @@ permalink: /software
 menu: true
 menuname: Work
 menuorder: 1
+octiconname: briefcase
 ---
 <section>
 <div class="container-xl p-responsive page-row">
@@ -15,11 +16,11 @@ menuorder: 1
     </h2>
     <br>
     {% for experience in site.data.work_experience.experiences %}
-    <p><span style="font-size: 200%; line-height: 2.5"><a href="{{ experience.link }}">{{experience.company}}</a></span>&nbsp;&nbsp;&nbsp;&nbsp;{{experience.location}}</p>
+    <p><span class="company" style="font-size: 200%; line-height: 2.5;"><a href="{{ experience.link }}" class="text-color-one">{{experience.company}}</a></span>&nbsp;&nbsp;&nbsp;&nbsp;{{experience.location}}</p>
     <ul style="list-style-type: none"><span style="font-size: 150%">Roles</span>
       {% for role in experience.roles %}
       <li style="margin: 5%">
-        <span style="color: #2D86FB;"><b>{{role.title}}</b></span>
+        <span  class="text-color-two"><b>{{role.title}}</b></span>
         <span class="time-period">{{role.duration}}</span>
       </li>
       {% endfor %}
@@ -27,15 +28,15 @@ menuorder: 1
     <ul style="list-style-type: none"><span style="font-size: 150%">Projects</span>
       {% for project in experience.projects %}
       <li style="margin: 5%">
-        <span style="color: #2D86FB;"><b>{{project.title}}</b></span>
+        <span class="text-color-two"><b>{{project.title}}</b></span>
         <span class="time-period">{{project.duration}}</span>
-        <div class="d-md-flex text-gray">
+        <div class="d-md-flex ">
           <div class="col-md-10 pr-md-4">
-            <p></p>
+            <br>
             {% for task in project.tasks %}
             <div class="d-flex mb-2">
               <div class="mr-2">
-                {% octicon check width:18 class:"fill-green" aria-label:check %}
+                {% octicon check width:18 class:"fill-light-green" aria-label:check %}
               </div>
               <p class="">
                 {{task.desc}}
@@ -56,7 +57,7 @@ menuorder: 1
       Skills
     </h2>
     <br>
-    <p style="font-size: 150%; line-height: 2; color: #2D86FB">Categories</p>
+    <p style="font-size: 150%; line-height: 2;" class="text-color-one">Categories</p>
     <table class="skills-table">
       <colgroup>
         <col span="1" width="37%">
@@ -64,25 +65,25 @@ menuorder: 1
         <col span="1" width="33%">
       </colgroup>
       <tr>
-        <td class="cat"><a class="btn btn-outline btn-blue btn-large server">Server</a></td>
-        <td class="cat"><a class="btn btn-outline btn-blue btn-large ui">UI</a></td>
-        <td class="cat"><a class="btn btn-outline btn-blue btn-large cloud">Cloud</a></td>
+        <td class="cat"><a class="btn btn-large server">Server</a></td>
+        <td class="cat"><a class="btn btn-large ui">UI</a></td>
+        <td class="cat"><a class="btn btn-large cloud">Cloud</a></td>
       </tr>
       <tr>
-        <td class="cat"><a class="btn btn-outline btn-blue btn-large testing">Testing</a></td>
-        <td class="cat"><a class="btn btn-outline btn-blue btn-large bigdata">Bigdata</a></td>
-        <td class="cat"><a class="btn btn-outline btn-blue btn-large scripting">Scripting</a></td>
+        <td class="cat"><a class="btn btn-large testing">Testing</a></td>
+        <td class="cat"><a class="btn btn-large bigdata">Bigdata</a></td>
+        <td class="cat"><a class="btn btn-large scripting">Scripting</a></td>
       </tr>
       <tr>
         <td class="cat"></td>
-        <td class="cat"><a class="btn btn-outline btn-blue btn-large cicd">CI/CD</a></td>
+        <td class="cat"><a class="btn btn-large cicd">CI/CD</a></td>
         <td class="cat"></td>
       </tr>
     </table>
 
-    <p style="font-size: 200%; line-height: 1.5; color: #2D86FB">Pro</p>
+    <p style="font-size: 200%; line-height: 1.5;" class="text-color-one">Pro</p>
 
-    <div class="d-md-flex text-gray">
+    <div class="d-md-flex ">
       <div class="col-md-12 pr-md-4">
 
         <table class="skills-table">
@@ -180,9 +181,9 @@ menuorder: 1
         </table>
       </div>
     </div>
-    <p style="font-size: 200%; line-height: 2; color: #2D86FB">Intermediate</p>
+    <p style="font-size: 200%; line-height: 2;" class="text-color-one">Intermediate</p>
 
-    <div class="d-md-flex text-gray">
+    <div class="d-md-flex ">
       <div class="col-md-11 pr-md-4">
 
         <table class="skills-table">
