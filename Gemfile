@@ -3,7 +3,8 @@
 source 'https://rubygems.org'
 
 gem 'github-pages', '>= 212', group: :jekyll_plugins
-
+gem 'json'
+gem 'bigdecimal'
 group :jekyll_plugins do
   gem 'jekyll-octicons'
   # need lazy-load support

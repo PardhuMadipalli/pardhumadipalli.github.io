@@ -33,11 +33,12 @@
 <body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
 <aside id="sidenav-open">
     <nav class="aside-nav bg-header-color">
-        <a href="/" class="text-white pl-md-3 py-4 width-full text-bold" ><img src="/assets/img/home.svg" class="nav-icon">Pardhu Madipalli</a>
+        <a href="/" class="text-white pl-md-3 py-4 width-full text-bold" ><img alt="Home Button" src="/assets/img/home.svg" class="nav-icon">Pardhu Madipalli</a>
         <hr>
         {% assign sorted_list = site.html_pages | sort: 'menuorder' | where: "menu", "true" %}
         {% for page in sorted_list %}
-        <a href="{{ page.permalink }}" class="text-white pl-md-3 py-4 width-full"><img src="assets/img/{{ page.octiconname }}.svg" class="nav-icon"> {{ page.menuname }}</a>
+        <a href="{{ page.permalink }}" class="text-white pl-md-3 py-4 width-full">
+            <img alt="{{ page.menuname }}" src="assets/img/{{ page.octiconname }}.svg" class="nav-icon"> {{ page.menuname }}</a>
         {% endfor %}
     </nav>
     <a href="#" id="sidenav-close" title="Close Menu" aria-label="Close Menu"></a>

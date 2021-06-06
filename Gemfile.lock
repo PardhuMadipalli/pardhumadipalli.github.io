@@ -10,6 +10,7 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
+    bigdecimal (3.0.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -208,6 +209,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    json (2.5.1)
     kramdown (2.3.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -297,13 +299,15 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bigdecimal
   github-pages (>= 212)
   html-proofer
   jekyll-octicons
+  json
   parallel
   rake
   rubocop
   typhoeus
 
 BUNDLED WITH
-   2.2.11
+   2.2.19
