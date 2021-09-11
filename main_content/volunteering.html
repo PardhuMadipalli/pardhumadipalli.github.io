@@ -9,6 +9,22 @@ menuorder: 5
 octiconname: heart
 ---
 
-<div class="container-lg p-responsive">
-  <h1>Coming soon!</h1>
+<div class="container-lg p-responsive mt-4">
+  {% for exp in site.data.volunteering.volunteerings %}
+  <h2 class="alt-h2 mb-2 text-color-two">
+    {{ exp.position }}
+  </h2>
+  <h4 class="alt-h4 mb-2">
+    {{ exp.organization }}
+  </h4>
+  <h6 class="alt-h6 mb-2">
+    {{ exp.duration }}
+  </h6>
+  </br>
+    {% for para in exp.description %}
+    <p>{{ para }}</p>
+    {% endfor %}
+  </br>
+  {% endfor %}
 </div>
+

@@ -14,3 +14,19 @@
 <img style="margin-left: auto; margin-right: auto" alt="PardhuMadipalli GitHub Page" src="files/website_recording.gif"/>
 </a>
 <br/>
+
+### How to build the website locally
+
+- Install Ruby
+- Install bundler
+```bash
+$ gem install bundler
+```
+- Install the gems using bundle
+```bash
+$ bundle install
+```
+- Run the Jekyll server locally using
+```bash
+$ bundle exec jekyll serve
+```
