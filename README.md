@@ -17,16 +17,16 @@
 
 ### How to build the website locally
 
-- Install Ruby
+- Install Ruby. Find various ways to install Ruby [here](https://www.ruby-lang.org/en/documentation/installation/).
 - Install bundler
 ```bash
-$ gem install bundler
+gem install bundler
 ```
 - Install the gems using bundle
 ```bash
-$ bundle install
+bundle install
 ```
 - Run the Jekyll server locally using
 ```bash
-$ bundle exec jekyll serve
+bundle exec jekyll serve
 ```
