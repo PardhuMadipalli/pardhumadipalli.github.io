@@ -1,4 +1,4 @@
-![Jekyll Build](https://github.com/PardhuMadipalli/pardhumadipalli.github.io/actions/workflows/jekyll.yml/badge.svg)
+![Jekyll Build And Deploy](https://github.com/PardhuMadipalli/pardhumadipalli.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 
 <img src="assets/img/android-chrome-192x192.png" alt="PardhuMadipalli Logo" width="100"/>
 
