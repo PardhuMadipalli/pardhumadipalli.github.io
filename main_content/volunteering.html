@@ -15,14 +15,22 @@ octiconname: heart
     {{ exp.position }}
   </h2>
   <h4 class="alt-h4 mb-2">
-    {{ exp.organization }}
+    {% if exp.link %}
+    <a href="{{ exp.link }}"  class="text-color-three" target="_blank">
+      {{ exp.organization }}
+    </a>
+    {% else %}
+    <span class="text-color-three">
+      {{ exp.organization }}
+    </span>
+    {% endif %}
   </h4>
   <h6 class="alt-h6 mb-2">
     {{ exp.duration }}
   </h6>
   </br>
     {% for para in exp.description %}
-    <p>{{ para }}</p>
+    <p class="text-justify">{{ para }}</p>
     {% endfor %}
   </br>
   {% endfor %}
