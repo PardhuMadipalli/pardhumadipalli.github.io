@@ -304,7 +304,6 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
-    webrick (1.7.0)
     yell (2.2.2)
     zeitwerk (2.4.2)
 
@@ -322,7 +321,6 @@ DEPENDENCIES
   rake
   rubocop
   typhoeus
-  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.5
+   2.2.19

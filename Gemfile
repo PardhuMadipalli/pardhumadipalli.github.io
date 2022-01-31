@@ -18,5 +18,3 @@ group :development, :test do
   gem 'rubocop'
   gem 'typhoeus'
 end
-
-gem "webrick", "~> 1.7"
