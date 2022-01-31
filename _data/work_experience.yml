@@ -9,11 +9,18 @@ experiences:
       - title: Member Technical Staff
         duration: July 2018 - July 2020
     projects:
+      - title: Stream Analytics Cloud Services
+        duration: March 2021 - Current
+        tasks:
+          - desc: Designed the complelete cloud architecture of this real-time anaytics product.
+          - desc: Developed the entire product using Kubernetes and gained sound understanding of micro-services and related technologies.
+          - desc: Implemented the complete CI/CD pipeline from testing to deploying on production servers.
+          - desc: Mentored three new campus hires on both technical and non-technical aspects.
       - title: GoldenGate Cloud Services
-        duration: June 2020 - Current
+        duration: June 2020 - February 2021
         tasks:
           - desc: My task is to help in providing Oracle Goldengate, a database replication service, as a cloud native offering on Oracle Cloud.
-          - desc: I work with technologies like Terraform and Packer to provision infrastructure on the cloud.
+          - desc: I worked with like Terraform and Packer to provision infrastructure on the cloud.
           - desc: Use Oracle internal technologies like Shepherd (a pretty Terraform) for CI/CD of the service.
           - desc: Write integration test codes with frameworks such as Cucumber and manage them with CI/CD pipeline tools like Teamcity, Jenkins.
       - title: Oracle Stream Analytics
