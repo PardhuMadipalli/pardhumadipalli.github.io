@@ -3,6 +3,7 @@ const highlightClassList = ['cloud', 'server', 'ui', 'scripting', 'testing', 'bi
 const highlightClassSelector = '.' + highlightClassList.join(',.')
 const highLightElems = document.querySelectorAll(highlightClassSelector);
 const sidenav = document.querySelector('#sidenav-open');
+const allDetails = document.querySelectorAll("details");
 
 highLightElems.forEach(el => el.addEventListener('mouseover', event => highlight(event)));
 highLightElems.forEach(el => el.addEventListener('mouseout', event => remhighlight(event)));
@@ -21,6 +22,33 @@ sidenav.addEventListener('transitionend', e => {
         ? closenav.focus()
         : opennav.focus();
 });
+
+
+allDetails.forEach(deet=>{
+  deet.addEventListener('toggle', toggleOpenOneOnly)
+})
+
+function toggleOpenOneOnly(e) {
+  if (this.open) {
+    allDetails.forEach(deet=>{
+      if (deet!=this && deet.open) deet.open = false
+    });
+  }
+}
+
+// Listen to all click events and close the details button if the event's target is not in details hierarchy.
+window.addEventListener('click', e=>{
+    console.log(e.target.element);
+    let taregtElem = e.target;
+    let isDetails = false;
+    allDetails.forEach( (deet) => {
+        isDetails = isDetails || deet.contains(taregtElem);
+    })
+    // console.log(isDetails);
+    if(!isDetails) {
+        allDetails.forEach( (deet) => deet.removeAttribute("open"));
+    }
+})
 
 function highlight(event) {
     let targetClassList = event.target.classList
