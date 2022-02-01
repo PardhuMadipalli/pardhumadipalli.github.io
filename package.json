@@ -1,13 +1,13 @@
 {
   "name": "pardhumadipalli.github.io",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Website of Pardhu Madipalli",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PardhuMadipalli/pardhumadipalli.github.io.git"
   },
-  "author": "",
+  "author": "pardhu1212@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PardhuMadipalli/pardhumadipalli.github.io/issues"
@@ -17,5 +17,9 @@
     "octicons": "^5.0.1",
     "primer-core": "^6.2.0",
     "primer-marketing": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
