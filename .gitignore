@@ -3,7 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .idea/
-
+.vscode/
 .DS_Store
 assets/vendor/jquery/build
 assets/vendor/jquery/speed
@@ -13,6 +13,8 @@ assets/vendor/octicons/svg
 assets/vendor/**/*.md
 assets/vendor/**/*.txt
 assets/vendor/bootstrap-sass/assets/javascripts/
+vendor/
+.bundle/
 .sass-cache
 .env
 .jekyll-metadata

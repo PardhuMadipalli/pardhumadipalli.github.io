@@ -1,0 +1,73 @@
+{% include header.html %}
+
+<div class="mx-auto pub-container py-3">
+    {% assign pagenum = page.paper_number | plus: 0 %}
+    {% assign paper = site.data.papers.papers[pagenum] %}
+    <!-- <h4 class="h4 text-color-two">
+        Paper Title
+    </h4>
+    <p></p> -->
+    <h1 class="h1">
+        {{ paper.title }}
+    </h1>
+    <div class="py-2">
+        <h4 class="h4 text-color-two pb-2">
+            Authors
+        </h4>
+        <ul class="px-3 ul-dashed">
+            {% for author in paper.authors %}
+            <li>{{ author }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="py-2">
+        <h4 class="h4 text-color-two px-right-1" style="display: inline">
+            {{ paper.type }}
+        </h4>
+        <i>{{ paper.journal }}</i>
+        published by <b>{{ paper.publisher }}</b>, {{ paper.time }}
+    </div>
+    <div class="py-2">
+        <h4 class="h4 text-color-two" style="display: inline">
+            Code
+        </h4>
+        <a href="{{ paper.code }}"
+           class="text-white px-2"
+           target="_blank"
+           style="text-decoration: underline">GitHub</a>
+    </div>
+    <div class="py-2">
+        <h4 class="h4 text-color-two" style="display: inline">
+            DOI
+        </h4>
+        <a href="https://doi.org/{{ paper.doi}}"
+           class="text-white px-2"
+           target="_blank"
+           style="text-decoration: underline">{{ paper.doi }}</a>
+    </div>
+
+    <div class="py-2">
+        <h4 class="h4 text-color-two pb-2">
+            Abstract
+        </h4>
+        {% for para in paper.abstract %}
+        <p></p>
+        <p>{{ para }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="py-2">
+        <h4 class="h4 text-color-two pb-2">
+            Citation
+        </h4>
+        <div class="small-border Box px-3">
+                <pre style="overflow: scroll">
+                    <code class="small-border citation">
+{{ paper.citation }}
+                    </code>
+                </pre>
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

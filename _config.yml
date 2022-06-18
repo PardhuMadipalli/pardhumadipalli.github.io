@@ -24,7 +24,7 @@ social:
     - https://github.com/PardhuMadipalli
 
 # build settings
-exclude: ["script", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "package.json", "package-lock.json", "node_modules", "vendor", ".idea"]
+exclude: ["script", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "package.json", "package-lock.json", "vendor", ".idea"]
 markdown: kramdown
 plugins:
   - jekyll-redirect-from

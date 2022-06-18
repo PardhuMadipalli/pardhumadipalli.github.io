@@ -1,56 +1,7 @@
 ---
-layout: home
+layout: paper
 title: Image segmentation with AWDO
 description: Conferene paper on image segmentation with AWDO
 permalink: /image-segmentation-awdo
+paper_number: 1
 ---
-
-<section>
-        <div class="mx-auto pub-container py-3">
-            {% assign paper = site.data.papers.papers[1] %}
-            <!-- <h4 class="h4 text-blue">
-                Paper Title
-            </h4>
-            <p></p> -->
-            <h1 class="h1">
-                {{ paper.title }}
-            </h1>
-            <br>
-            <h4 class="h4 text-blue">
-                Authors
-            </h4>
-            <ul class="px-3 ul-dashed">
-                {% for author in paper.authors %}
-                <li>{{ author }}</li>
-                {% endfor %}
-            </ul>
-            <br>
-            <h4 class="h4 text-blue px-right-1" style="display: inline">
-               {{ paper.type }}
-            </h4>
-            <i>{{ paper.journal }}</i>
-            published by <b>{{ paper.publisher }}</b>, {{ paper.time }}
-            <br>
-            <br>
-            <h4 class="h4 text-blue">
-                Abstract
-            </h4>
-            {% for para in paper.abstract %}
-            <p></p>
-            <p>{{ para }}</p>
-            {% endfor %}
-
-            <br>
-            <h4 class="h4 text-blue">
-                Citation
-            </h4>
-            <br>
-            <div class="small-border Box px-3">
-                <pre style="overflow: scroll">
-                    <code class="small-border citation">
-{{ paper.citation }}
-                    </code>
-                </pre>
-            </div>
-        </div>
-</section>
