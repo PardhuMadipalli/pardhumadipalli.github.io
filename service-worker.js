@@ -6,7 +6,7 @@ var preLoad = function(){
     console.log("Installing web app");
     return caches.open("offline").then(function(cache) {
         console.log("caching index and important routes");
-        return cache.addAll(["/", "/software", "/education","/image-segmentation-awdo","image-segmentation-wdo" ,"/offline.html"]);
+        return cache.addAll(["/", "/work", "/education","/image-segmentation-awdo","image-segmentation-wdo" ,"/offline.html"]);
     });
 };
 
