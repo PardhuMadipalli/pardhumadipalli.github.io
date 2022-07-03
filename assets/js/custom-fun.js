@@ -1,11 +1,13 @@
 const tableSkills = document.querySelectorAll('td:not(.cat)');
-const highlightClassList = ['cloud', 'server', 'ui', 'scripting', 'testing', 'bigdata', 'cicd']
+const highlightClassList = ['cloud', 'server', 'ui', 'scripting', 'testing', 'bigdata', 'cicd', 'java']
 const highlightClassSelector = '.' + highlightClassList.join(',.')
 const highLightElems = document.querySelectorAll(highlightClassSelector);
+const skillLevelHeadingElems = document.querySelectorAll('.skill-level-heading')
 const sidenav = document.querySelector('#sidenav-open');
 
 highLightElems.forEach(el => el.addEventListener('mouseover', event => highlight(event)));
 highLightElems.forEach(el => el.addEventListener('mouseout', event => remhighlight(event)));
+
 
 const closenav = document.querySelector('#sidenav-close');
 const opennav = document.querySelector('#sidenav-button');
@@ -35,6 +37,9 @@ function highlight(event) {
             tableSkills[i].classList.add('hide-elem')
         }
     }
+
+    // loop through all headings
+    skillLevelHeadingElems.forEach(elem => elem.classList.add('hide-elem'))
 }
 
 function remhighlight(event) {
@@ -43,5 +48,8 @@ function remhighlight(event) {
         // Remove the class 'active' if it exists
         tableSkills[i].classList.remove('hide-elem')
     }
+
+    // loop through all headings
+    skillLevelHeadingElems.forEach(elem => elem.classList.remove('hide-elem'))
 }
 

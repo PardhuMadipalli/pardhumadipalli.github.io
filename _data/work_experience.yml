@@ -43,3 +43,7 @@ experiences:
         tasks:
           - desc: The task is to develop a method to reduce lens shading(due to which colours distort in the corners in images) in Samsung mobile cameras.
           - desc: The developed method was implemented in Python.
+
+certificates:
+  - title: Oracle Cloud Infrastructure 2021 Architect Associate
+    link: https://catalog-education.oracle.com/pls/certview/sharebadge?id=BB2511098A263166905F29349B11A7262A905A746BDD412E50C4121DB4FC3146

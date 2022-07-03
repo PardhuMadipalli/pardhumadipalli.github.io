@@ -11,7 +11,8 @@ papers:
     journal: Biomedical Signal Processing and Control
     time: February, 2018
     publisher: Elsevier
-    link: https://doi.org/10.1016/j.bspc.2017.08.009
+    doi: 10.1016/j.bspc.2017.08.009
+    code: https://github.com/PardhuMadipalli/image-segmentation-using-wdo
     abstract:
       - Cardiovascular diseases are the third leading cause of death worldwide. The primitive indication of the possible onset of a cardiovascular disease is atherosclerosis, which is the accumulation of plaque on the arterial wall.
       - The intima-media thickness (IMT) of the common carotid artery is an early marker of the development of cardiovascular disease. The computation of the IMT and the delineation of the carotid plaque are significant predictors for the clinical diagnosis of the risk of stroke.
@@ -39,7 +40,8 @@ papers:
     journal: National Conference on Communications (NCC)
     time: 25-28 Feb. 2018
     publisher: IEEE
-    link: https://doi.org/10.1109/NCC.2018.8600240
+    doi: 10.1109/NCC.2018.8600240
+    code: https://github.com/PardhuMadipalli/image-segmentation-using-awdo
     abstract:
       - Cardiovascular diseases have been one of the leading causes of death and have been increasing in much of the developing world. Atherosclerosis, the accumulation of plaque on artery walls is the major for cardiovascular diseases. This is diagnosed by measuring the thickness of IMC of common carotid artery (CCA) in ultrasound images.
       - In this paper, we present a completely automatic technique for segmentation of IMC in ultrasound images of CCA. The image is segmented using adaptive wind driven optimization (AWDO) technique. The denoising filter based on Bayesian least square approach and a robust enhancement technique is used in the pre-processing stage.
