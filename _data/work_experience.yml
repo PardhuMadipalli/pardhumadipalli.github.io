@@ -12,25 +12,27 @@ experiences:
       - title: Stream Analytics Cloud Services
         duration: March 2021 - Current
         tasks:
-          - desc: Designed the complelete cloud architecture of this real-time anaytics product.
-          - desc: Developed the entire product using Kubernetes and gained sound understanding of micro-services and related technologies.
-          - desc: Implemented the complete CI/CD pipeline from testing to deploying on production servers.
-          - desc: Mentored three new campus hires on both technical and non-technical aspects.
+          - desc: Led the team in designing end-to-end architecture of this cloud-native real-time data anaytics product based on Apache Spark.
+          - desc: Developed the product using Kubernetes and gained sound understanding of micro-services based design.
+          - desc: Built workflows and REST API for control plane and data plane.
+          - desc: Implemented the complete CI/CD pipeline from testing to deploying on production servers using Terraform, Jenkins and TeamCity.
+          - desc: Working as an acting-scrum master for the team.
+          - desc: Mentored four new hires on both technical and non-technical aspects.
       - title: GoldenGate Cloud Services
         duration: June 2020 - February 2021
         tasks:
-          - desc: My task is to help in providing Oracle Goldengate, a database replication service, as a cloud native offering on Oracle Cloud.
-          - desc: I worked with like Terraform and Packer to provision infrastructure on the cloud.
-          - desc: Use Oracle internal technologies like Shepherd (a pretty Terraform) for CI/CD of the service.
-          - desc: Write integration test codes with frameworks such as Cucumber and manage them with CI/CD pipeline tools like Teamcity, Jenkins.
-      - title: Oracle Stream Analytics
+          - desc: Migrated Oracle Goldengate, a database replication service, from om-premise to Oracle Cloud.
+          - desc: Contributed to critical aspects of the product such as auto-scaling, file storage and networking.
+          - desc: Setup CI/CD of the service using Terraform and a few internal Oracle tools.
+          - desc: Wrote integration tests with frameworks such as Cucumber and managed them with CI/CD pipeline tools like Teamcity, Jenkins.
+      - title: Oracle Stream Analytics (OSA)
         duration: July 2018 - May 2020
         tasks:
-          - desc: Developing end to end features and resolving critical bugs in the web application.
-          - desc: Manage both web server and client side development work like optimizing web application, enhancing user experience (UX).
-          - desc: With cloud infrastructure tools like Terraform and Packer, I played a significant role in providing OSA as a standalone Oracle Cloud Marketplace offering.
-          - desc: Work on developing docker images for various components of the product and attain sound knowledge of containerization technologies like Docker.
-          - desc: As a part of a Big Data analytics team, I have basic knowledge in Big Data tools like Apache Kafka, Spark, HDFS, MapReduce and YARN.
+          - desc: Developed end-to-end features and resolved critical bugs in the web application.
+          - desc: Managed both web server and client side development work including optimizing web application, impelenting security features. enhancing user experience (UX).
+          - desc: With cloud infrastructure tools like Packer, I played a significant role in providing OSA as a standalone Oracle Cloud Marketplace offering.
+          - desc: Worked on developing docker images for various components of the product.
+          - desc: Contributed towards integrating the product with Bigdata technologies such as Apache Kafka and Spark.
   - company: Samsung R&D
     location: Bangalore, India
     link: https://research.samsung.com/sri-b
