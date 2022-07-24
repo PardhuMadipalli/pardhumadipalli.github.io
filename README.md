@@ -19,14 +19,14 @@
 
 - Install Ruby. Find various ways to install Ruby [here](https://www.ruby-lang.org/en/documentation/installation/).
 - Install bundler
-```bash
+```shell
 gem install bundler
 ```
 - Install the gems using bundle
-```bash
+```shell
 bundle install
 ```
 - Run the Jekyll server locally using
-```bash
+```shell
 bundle exec jekyll serve
 ```
