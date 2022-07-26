@@ -43,22 +43,10 @@
               </div>
         </footer>
     </main>
-    <!--     Global site tag (gtag.js) - Google Analytics-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPBWW94V7C"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-GPBWW94V7C');
-    </script>
-    <!-- Clarity tracking code for https://pardhumadipalli.github.io/ -->
-    <script>
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "71owivrao9");
-    </script>
+    <!-- Include analytics code here -->
+    {% if jekyll.environment == "production" %}
+        {% include analytics.html %}
+    {% endif %}
     <script src="/assets/vendor/anchor-js/anchor.min.js"></script>
     <script src="/assets/js/custom-fun.js"></script>
     <script src="{{ "/assets/vendor/jquery/dist/jquery.min.js" | relative_url}}"></script>
@@ -69,9 +57,6 @@
       <script src="{{ "/assets/js/home.js" | relative_url}}"></script>
     {% endif %}
     <script src="{{ "/register-sw.js" | relative_url}}"></script>
-
-    <!--<script src="{{ "/assets/js/app123.js" | relative_url}}"></script>-->
-
     </body>
 </html>
 <!-- Proudly powered by GitHub Pages ~ Generated {{ site.time }} -->

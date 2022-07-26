@@ -33,7 +33,7 @@ experiences:
           - desc: With cloud infrastructure tools like Packer, I played a significant role in providing OSA as a standalone Oracle Cloud Marketplace offering.
           - desc: Worked on developing docker images for various components of the product.
           - desc: Contributed towards integrating the product with Bigdata technologies such as Apache Kafka and Spark.
-  - company: Samsung R&D
+  - company: Samsung
     location: Bangalore, India
     link: https://research.samsung.com/sri-b
     roles:

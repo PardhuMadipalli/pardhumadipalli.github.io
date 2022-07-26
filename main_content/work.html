@@ -17,8 +17,9 @@ octiconname: briefcase
     </h2>
     <br>
     {% for experience in site.data.work_experience.experiences %}
-    <p><span class="company" style="font-size: 200%; line-height: 2.5;"><a href="{{ experience.link }}" class="text-color-one">{{experience.company}}</a></span>&nbsp;&nbsp;&nbsp;&nbsp;{{experience.location}}</p>
-    <ul style="list-style-type: none"><span style="font-size: 150%">Roles</span>
+    <h3><span class="company" style="font-size: 170%; line-height: 2.5;"><a href="{{ experience.link }}" class="text-color-one">{{experience.company}}</a></span>&nbsp;&nbsp;&nbsp;&nbsp;{{experience.location}}</h3>
+    <h4 style="font-size: 150%">Roles</h4>
+    <ul style="list-style-type: none">
       {% for role in experience.roles %}
       <li style="margin: 5%">
         <span  class="text-color-two"><b>{{role.title}}</b></span>
@@ -26,7 +27,8 @@ octiconname: briefcase
       </li>
       {% endfor %}
     </ul>
-    <ul style="list-style-type: none"><span style="font-size: 150%">Projects</span>
+    <h4 style="font-size: 150%">Projects</h4>
+    <ul style="list-style-type: none">
       {% for project in experience.projects %}
       <li style="margin: 5%">
         <span class="text-color-two"><b>{{project.title}}</b></span>
@@ -73,7 +75,7 @@ octiconname: briefcase
       Skills
     </h2>
     <br>
-    <p style="font-size: 150%; line-height: 2;" class="text-color-one">Categories</p>
+    <h3 style="font-size: 150%; line-height: 2;" class="text-color-one pb-2">Categories</h3>
     <table class="skills-table">
 <!--      <colgroup>-->
 <!--        <col span="1" width="37%">-->
@@ -94,7 +96,7 @@ octiconname: briefcase
       </tr>
     </table>
 
-    <p style="font-size: 200%; line-height: 1.5;" class="text-color-one skill-level-heading">Pro</p>
+    <h3 style="font-size: 170%; line-height: 1.5;" class="text-color-one pb-2">Pro</h3>
 
     <div class="d-md-flex ">
       <div class="col-md-12 pr-md-4">
@@ -109,7 +111,7 @@ octiconname: briefcase
 <!--              <svg viewBox="0 0 24 24" fill="#007396">-->
 <!--                <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"></path>-->
 <!--              </svg> -->
-                <img src="assets/img/java-seeklogo.com.svg">
+                <img src="assets/img/java-seeklogo.com.svg" aria-hidden="true">
                 Java</span>
             </td>
             </td>
@@ -126,7 +128,7 @@ octiconname: briefcase
 <!--              <svg viewBox="0 0 24 24" fill="#007396">-->
 <!--                <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"></path>-->
 <!--              </svg>-->
-                  <img src="assets/img/java-seeklogo.com.svg"> JPA</span>
+                  <img src="assets/img/java-seeklogo.com.svg" aria-hidden="true"> JPA</span>
             </td>
               <td class="cloud-skill">
               <span>
@@ -163,7 +165,7 @@ octiconname: briefcase
             </td>
             <td >
               <span>
-                <img src="assets/img/gradle-elephant-icon-gradient-primary.svg">
+                <img src="assets/img/gradle-elephant-icon-gradient-primary.svg" aria-hidden="true">
 <!--                <svg fill="#02303A"  viewBox="0 0 24 24" ><path d="M22.695 4.297a3.807 3.807 0 0 0-5.29-.09.368.368 0 0 0 0 .533l.46.47a.363.363 0 0 0 .474.032 2.182 2.182 0 0 1 2.86 3.291c-3.023 3.02-7.056-5.447-16.211-1.083a1.24 1.24 0 0 0-.534 1.745l1.571 2.713a1.238 1.238 0 0 0 1.681.461l.037-.02-.029.02.688-.384a16.083 16.083 0 0 0 2.193-1.635.384.384 0 0 1 .499-.016.357.357 0 0 1 .016.534 16.435 16.435 0 0 1-2.316 1.741H8.77l-.696.39a1.958 1.958 0 0 1-.963.25 1.987 1.987 0 0 1-1.726-.989L3.9 9.696C1.06 11.72-.686 15.603.26 20.522a.363.363 0 0 0 .354.296h1.675a.363.363 0 0 0 .37-.331 2.478 2.478 0 0 1 4.915 0 .36.36 0 0 0 .357.317h1.638a.363.363 0 0 0 .357-.317 2.478 2.478 0 0 1 4.914 0 .363.363 0 0 0 .358.317h1.627a.363.363 0 0 0 .363-.357c.037-2.294.656-4.93 2.42-6.25 6.108-4.57 4.502-8.486 3.088-9.9zm-6.229 6.901l-1.165-.584a.73.73 0 1 1 1.165.587z"></path></svg> -->
                 Gradle</span>
             </td>
@@ -192,11 +194,11 @@ octiconname: briefcase
               <span>
 <!--                <svg  fill="#FFFFFF" viewBox="0 0 24 24" ><path d="m0 0v24h24v-24zm2.664 2.964h7.48v1.832h-2.748v7.196h-1.984v-7.196h-2.748zm9.328 18h-9v-1.5h9zm5.56391-9.21826a4.62 4.62 0 0 1 -2.03591.37426 4.556 4.556 0 0 1 -4.628-4.616v-.024a4.584 4.584 0 0 1 4.708-4.668 4.65561 4.65561 0 0 1 3.56 1.388l-1.264 1.456a3.33594 3.33594 0 0 0 -2.312-1.02 2.67116 2.67116 0 0 0 -2.616 2.8v.028a2.68058 2.68058 0 0 0 2.616 2.836 3.22606 3.22606 0 0 0 2.376-1.056l1.264 1.276a4.61947 4.61947 0 0 1 -1.66809 1.22573z"></path>-->
 <!--              </svg> -->
-                <img src="assets/img/TeamCity_Icon.svg">
+                <img src="assets/img/TeamCity_Icon.svg" aria-hidden="true">
                 Teamcity</span>
             </td>
             <td class="bigdata-skill">
-              <object type="image/svg+xml" data="assets/img/Apache_kafka.svg"></object> Kafka</span>
+              <img src="assets/img/Apache_kafka.svg" aria-hidden="true"> Kafka</span>
             </td>
           </tr>
           <tr>
@@ -214,7 +216,7 @@ octiconname: briefcase
         </table>
       </div>
     </div>
-    <p style="font-size: 200%; line-height: 2;" class="text-color-one skill-level-heading">Intermediate</p>
+    <h3 style="font-size: 170%; line-height: 2;" class="text-color-one pb-2">Intermediate</h3>
 
     <div class="d-md-flex ">
       <div class="col-md-11 pr-md-4">
@@ -255,7 +257,7 @@ octiconname: briefcase
       </div>
     </div>
 
-    <p style="font-size: 200%; line-height: 2;" class="text-color-one skill-level-heading">Basic</p>
+    <h3 style="font-size: 170%; line-height: 2;" class="text-color-one pb-2">Basic</h3>
 
     <div class="d-md-flex ">
       <div class="col-md-11 pr-md-4">
