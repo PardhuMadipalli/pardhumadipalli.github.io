@@ -14,6 +14,9 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    env:
+      CI: false
+
     strategy:
       matrix:
         node-version: [19.6.0] # We will deploy with only one version of node
