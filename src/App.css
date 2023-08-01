@@ -1,0 +1,116 @@
+:root {
+    --home-page-element-thickeness: 3px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Box-project {
+    padding: 10px;
+    position: relative;
+    /*background-color: white;*/
+    border: 0 solid transparent;
+}
+
+.Box-project::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: var(--home-page-element-thickeness);
+    left: var(--home-page-element-thickeness);
+    background: white;
+    z-index: -1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity .3s ease-in-out;
+    backface-visibility: hidden;
+    width:  calc(100% - (var(--home-page-element-thickeness)*2));
+    height: calc(100% - (var(--home-page-element-thickeness)*2));
+    border-radius: 10px;
+}
+
+.Box-project::after {
+    content: '';
+    background-image: linear-gradient(92.05deg, #B392F0 10.42%, #EC6CB9 47.91%, #F97583 100%);
+    background-position: 50% 50%;
+    background-size: 100%;
+    border-radius: 10px;
+    z-index: -2;
+    position: absolute;
+    /*transition: all .3s ease-in 2s;*/
+    opacity: 50%;
+    transition: all .3s ease;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.Box-project:hover::before {
+    --home-page-element-thickeness: 5px;
+}
+
+.Box-project:hover::after {
+    /*background-image: linear-gradient(92.05deg, #EC6CB9 10.42%,  #B392F0 47.91%, #F97583 100%);*/
+    opacity: 1;
+}
+
+/*.Box-project.Mui-focusVisible::after {*/
+/*    background-image: linear-gradient(92.05deg, #EC6CB9 10.42%,  #B392F0 47.91%, #F97583 100%);*/
+/*}*/
+
+.main-button {
+    background: linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%);
+    -webkit-background-clip: text;
+    /*background-clip: text;*/
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    svg {
+        fill: #FF7170;
+    }
+}
+
+.main-button:hover {
+    opacity: 0.6;
+    svg {
+        margin-left: 4px;
+        transform: scaleX(1.2);
+    }
+}
+

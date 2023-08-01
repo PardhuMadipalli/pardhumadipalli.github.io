@@ -1,0 +1,22 @@
+data:
+  - title: Bachelor of Technology (BTech)
+    date: 2014 - 2018
+    institute: National Institute of Technology Surathkal, Karnataka
+    branch: Electronics and Communication Engineering (ECE)
+    grade: 8.9/10 GPA
+    additionalDataItems:
+      - heading: "Extra-curriculars:"
+        data:
+          - Head of Electronics Special Interest Group, ACM NITK Chapter
+          - Secretary of NSS NITK Surathkal
+
+  - title: Intermediate (12th class)
+    date: 2012 - 2014
+    institute: Narayana Junior College, Vijayawada
+    branch: Maths, Physics, and Chemistry
+    grade: 98.3 %
+    
+  - title: SSC - 10th standard 
+    date: 2012
+    institute: Master E.K. Bala Bhanu Vidyalayam school
+    grade: 9.8/10 GPA        
