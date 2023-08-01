@@ -1,0 +1,57 @@
+data:
+  - company: Amazon
+    location: Bangalore
+    roles:
+      - title: Software Development Engineer - II
+        duration: November 2022 - Current
+    projects:
+      - title: Ad Feedback
+        duration: November 2022 - Current
+        tasks:
+          - desc: Designed QR code based ad feedback submission functionality for Prime Video Ads feedback.
+          - desc: Implemented Ad Reporting feature as mandated by Digital Safety Act, EU
+  - company: Oracle
+    location: Bangalore, India
+    link: https://www.oracle.com/
+    roles:
+      - title: Senior Member Technical Staff
+        duration: August 2020 - October 2022
+      - title: Member Technical Staff
+        duration: July 2018 - July 2020
+    projects:
+      - title: Stream Analytics Cloud Services
+        duration: March 2021 - October 2022
+        tasks:
+          - desc: Led the team in designing end-to-end architecture of this cloud-native real-time data anaytics product based on Apache Spark.
+          - desc: Developed the product using Kubernetes and gained sound understanding of micro-services based design.
+          - desc: Built workflows and REST API for control plane and data plane.
+          - desc: Implemented the complete CI/CD pipeline from testing to deploying on production servers using Terraform, Jenkins and TeamCity.
+          - desc: Working as an acting-scrum master for the team.
+          - desc: Mentored four new hires on both technical and non-technical aspects.
+      - title: GoldenGate Cloud Services
+        duration: June 2020 - February 2021
+        tasks:
+          - desc: Migrated Oracle Goldengate, a database replication service, from om-premise to Oracle Cloud.
+          - desc: Contributed to critical aspects of the product such as auto-scaling, file storage and networking.
+          - desc: Setup CI/CD of the service using Terraform and a few internal Oracle tools.
+          - desc: Wrote integration tests with frameworks such as Cucumber and managed them with CI/CD pipeline tools like Teamcity, Jenkins.
+      - title: Oracle Stream Analytics (OSA)
+        duration: July 2018 - May 2020
+        tasks:
+          - desc: Developed end-to-end features and resolved critical bugs in the web application.
+          - desc: Managed both web server and client side development work including optimizing web application, impelenting security features. enhancing user experience (UX).
+          - desc: With cloud infrastructure tools like Packer, I played a significant role in providing OSA as a standalone Oracle Cloud Marketplace offering.
+          - desc: Worked on developing docker images for various components of the product.
+          - desc: Contributed towards integrating the product with Bigdata technologies such as Apache Kafka and Spark.
+  - company: Samsung
+    location: Bangalore, India
+    link: https://research.samsung.com/sri-b
+    roles:
+      - title: Summer Intern
+        duration: May 2017 - June 2017
+    projects:
+      - title: Grid Anti Shading
+        duration: May 2017 - June 2017
+        tasks:
+          - desc: The task is to develop a method to reduce lens shading(due to which colours distort in the corners in images) in Samsung mobile cameras.
+          - desc: The developed method was implemented in Python.

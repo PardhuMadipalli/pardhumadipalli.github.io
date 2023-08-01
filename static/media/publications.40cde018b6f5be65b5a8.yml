@@ -1,0 +1,56 @@
+data:
+  - stub: segmentation-intima-media-complex-wdo
+    title: Segmentation of intima media complex from carotid ultrasound images using wind driven optimization technique
+    authors:
+      - Y.Nagaraj
+      - Pardhu Madipalli
+      - Jeny Rajan
+      - P. KrishnaKumar
+      - A.V.Narasimhadhana
+    publication:
+      type: Journal
+      name: Biomedical Signal Processing and Control
+      date: February, 2018
+      doi:
+        number: 10.1016/j.bspc.2017.08.009
+        url: https://doi.org/10.1016/j.bspc.2017.08.009
+    abstract:
+      - Cardiovascular diseases are the third leading cause of death worldwide. The primitive indication of the possible onset of a cardiovascular disease is atherosclerosis, which is the accumulation of plaque on the arterial wall.
+      - The intima-media thickness (IMT) of the common carotid artery is an early marker of the development of cardiovascular disease. The computation of the IMT and the delineation of the carotid plaque are significant predictors for the clinical diagnosis of the risk of stroke.
+      - For a robust diagnosis, carotid ultrasound images must be free from speckle noise. To address this problem, we use state-of-the-art despeckling and enhancement methods in this work. Many edge-based methods for IMT estimation have been proposed to overcome the limitations of manual segmentation.
+      - In this paper, we present a fully automated region-of-interest (ROI) extraction and a threshold-based segmentation of the intima media complex (IMC) using a wind driven optimization (WDO) technique. A quantitative evaluation is carried out on 90 carotid ultrasound images of two different datasets. The obtained results are compared with those of state-of-the-art techniques such as a model-based approach, a dynamic programming method, and a snake segmentation method. The experimental analysis shows that the proposed method is robust in measuring the IMT in carotid ultrasound images.
+    citation: |
+      Y. Nagaraj, Pardhu Madipalli, Jeny Rajan, P. Krishna Kumar, A.V. Narasimhadhan,
+      Segmentation of intima media complex from carotid ultrasound images using wind driven optimization technique,
+      Biomedical Signal Processing and Control,
+      Volume 40,
+      2018,
+      Pages 462-472,
+      ISSN 1746-8094,
+      https://doi.org/10.1016/j.bspc.2017.08.009.
+      (https://www.sciencedirect.com/science/article/pii/S174680941730174X)
+  - stub: segmentation-intima-media-complex-awdo
+    title: Fully automatic segmentation of ultrasound common carotid artery images using Adaptive Wind Driven Optimisation
+    authors:
+      - Pardhu Madipalli
+      - Sandeep Kotta
+      - Harish Dadi
+      - Asha C S
+      - A.V.Narasimhadhana
+    publication:
+      type: Conference
+      name: National Conference on Communications (NCC)
+      date: 25-28 Feb. 2018
+      doi:
+        number: 10.1109/NCC.2018.8600240
+        url: https://doi.org/10.1109/NCC.2018.8600240
+    abstract:
+      - Cardiovascular diseases have been one of the leading causes of death and have been increasing in much of the developing world. Atherosclerosis, the accumulation of plaque on artery walls is the major for cardiovascular diseases. This is diagnosed by measuring the thickness of IMC of common carotid artery (CCA) in ultrasound images.
+      - In this paper, we present a completely automatic technique for segmentation of IMC in ultrasound images of CCA. The image is segmented using adaptive wind driven optimization (AWDO) technique. The denoising filter based on Bayesian least square approach and a robust enhancement technique is used in the pre-processing stage.
+      - The proposed method is evaluated on 60 ultrasound images and is compared with the state-of-the-art methods. The experimental results show that the proposed method yields better results as compared to other methods.
+    citation: |
+      P. Madipalli, S. Kotta, H. Dadi, N. Y., A. C.S. and A. V. Narasimhadhan,
+      "Automatic Segmentation of Intima Media Complex in Common Carotid Artery using Adaptive Wind Driven Optimization,"
+      2018 Twenty Fourth National Conference on Communications (NCC), Hyderabad, 2018, pp. 1-6,
+      doi: 10.1109/NCC.2018.8600240.
+

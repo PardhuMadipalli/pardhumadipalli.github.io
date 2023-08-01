@@ -1,0 +1,22 @@
+data:
+  - category: Pro
+    skills:
+      - Java
+      - REST APIs
+      - Spring
+      - Guice
+      - Dropwizard
+      - AWS cloud
+      - OCI cloud
+      - Oracle (SQL)
+  - category: Intermediate
+    skills:
+      - Kafka
+      - Spark
+      - DynamoDB (NoSQL)
+      - Machine Learning
+      - React
+  - category: Beginner
+    skills:
+      - Scala
+      - Python

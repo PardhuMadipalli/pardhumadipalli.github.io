@@ -1,0 +1,11 @@
+data:
+  - label: Home
+    url: /
+  - label: Work
+    url: /work
+  - label: Volunteering
+    url: /volunteering
+  - label: Education
+    url: /education
+  - label: Publications
+    url: /publications
