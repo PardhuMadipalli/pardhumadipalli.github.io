@@ -10,6 +10,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
+import {Divider, Typography} from "@mui/material";
 
 export default function SwipeableMenu({tabs}) {
   const [state, setState] = React.useState(false);
@@ -49,6 +50,10 @@ export default function SwipeableMenu({tabs}) {
                 onClick={toggleDrawer(false)}
                 onKeyDown={toggleDrawer(false)}
                 >
+                    <Box textAlign='center' py={4}>
+                        <Typography>Pardhu Madipalli</Typography>
+                    </Box>
+                    <Divider/>
                     <List>
                         {tabs.map((tab, index) => (
                         <ListItem key={tab.label} disablePadding>

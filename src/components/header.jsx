@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, useMediaQuery, useTheme, Stack } from "@mui/material";
+import {Grid, Typography, useMediaQuery, useTheme, Stack, Box} from "@mui/material";
 import BlogLogo from "./blogLogo";
 import { TabsNav } from './navigation';
 import SwipeableMenu from './menuDrawer';
@@ -7,7 +7,7 @@ import {fetchDataAndUpdateItems} from "../commons/commons";
 
 const MenuTabsData = require('../content/miscellaneous/menuElements.yml')
 
-const MobileHeader = ({tabs}) =>
+const MobileHeader = ({tabs, pageTitle}) =>
     <Stack direction='row' component='header' justifyContent='space-between'
         sx={{ 
             position: 'sticky', 
@@ -16,6 +16,9 @@ const MobileHeader = ({tabs}) =>
             py: 1
         }}>
          <BlogLogo />
+        <Box sx={{ height: '40px', display:'flex', alignItems:'center'}}>
+            <Typography ax={{ verticalAlign:'middle' }}>{pageTitle}</Typography>
+        </Box>
          <SwipeableMenu tabs={tabs}/>
     </Stack>
 
@@ -25,7 +28,7 @@ const DesktopHeader = ({pageTitle, tabs}) =>
               backgroundColor: (theme) =>
                   theme.palette.mode === 'light'
                       ? theme.palette.grey[200]
-                      : theme.palette.grey[800],
+                      : 'rgba(0, 0, 0, 0.9)',
           }}
     >
         <Grid container item spacing={7} alignItems="center" xs={7}>
@@ -55,7 +58,7 @@ export default function BlogHeader({pageTitle}) {
     return (
         <>
             {
-                isBiggerThanSm ? <DesktopHeader pageTitle={pageTitle} tabs={tabs}/> : <MobileHeader tabs={tabs}/>
+                isBiggerThanSm ? <DesktopHeader pageTitle={pageTitle} tabs={tabs}/> : <MobileHeader tabs={tabs} pageTitle={pageTitle}/>
             }
         </>
     )

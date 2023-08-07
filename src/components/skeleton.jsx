@@ -14,7 +14,7 @@ export default function SkeletonPage(props) {
     return (
         <>
             <BlogHeader pageTitle="Pardhu Madipalli"/>
-            <Container maxWidth="xl">
+            <Container maxWidth="xl" sx={{ py : 3 }}>
                     {/* {props.children} */}
                     <Outlet/>
             </Container>

@@ -123,8 +123,8 @@ const HomePage = () => {
                     Check more about my hobbies here.
                 </Typography>
                 <Box sx={{ width: 'auto'}}>
-                    <Button href='/personal' variant='contained' sx={{
-                        // fontWeight: 'bolder'
+                    <Button href='/personal' variant='contained' color='primary' sx={{
+                        fontWeight: '700'
                     }}>Personal</Button>
                 </Box>
             </Box>

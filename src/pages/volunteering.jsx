@@ -42,30 +42,18 @@ function VoppContent({vopp, isBiggerThanSm}) {
 function VolunteerItem({vOpp}) {
     const isBiggerThanSm = useMediaQuery(useTheme().breakpoints.up('sm'))
     return(
-        <Card sx={{
+        <Box className="Box-project" sx={{
             width: {xs: '100%', sm: '75%', lg: '70%'},
-            height: {xs: 'auto', sm: 400},
-            display: 'flex'
         }}>
-            { isBiggerThanSm ? 
-            // <CardMedia image='./favicon.ico' >
-            //     <CardContent sx={{
-            //         // backgroundColor: 'rgba(0,0,0, 0.6)',
-            //         // backdropFilter: 'blur(3px)'
-            //     }}>
-            //         <Box
-            //             sx={{
-            //                 // backgroundColor: (theme) => theme.palette.background.paper,
-            //                 backdropFilter: 'blur(40px)',
-            //                 color: 'white'
-            //         }}
-            //             p={3} m={3}
-            //         >
-            //             <VoppContent vopp={vOpp} isBiggerThanSm={isBiggerThanSm}/>
-            //         </Box>
-            //     </CardContent>
-            // </CardMedia>
-
+        <Card sx={{
+            // width: {xs: '100%', sm: '75%', lg: '70%'},
+            height: {xs: 'auto', sm: 400},
+            display: 'flex',
+            // borderImage: 'linear-gradient(92.05deg, #B392F0 10.42%, #EC6CB9 47.91%, #F97583 100%)',
+            // borderWidth:'10px',
+            // borderStyle: 'solid'
+        }}>
+            { isBiggerThanSm ?
                 // greater than sm
                 <>
                     <CardContent sx={{
@@ -73,13 +61,6 @@ function VolunteerItem({vOpp}) {
                         // backdropFilter: 'blur(3px)'
                         width: 0.65
                     }}>
-                        {/*<Box*/}
-                        {/*    sx={{*/}
-                        {/*        // backgroundColor: (theme) => theme.palette.background.paper,*/}
-                        {/*        backdropFilter: 'blur(40px)',*/}
-                        {/*    }}*/}
-                        {/*    p={3}*/}
-                        {/*>*/}
                             <VoppContent vopp={vOpp} isBiggerThanSm={isBiggerThanSm}/>
                         {/*</Box>*/}
                     </CardContent>
@@ -100,6 +81,8 @@ function VolunteerItem({vOpp}) {
 
             }
         </Card>
+        </Box>
+
     )
 }
 
@@ -108,7 +91,7 @@ export default function VolunteeringPage() {
     React.useEffect(fetchDataAndUpdateItems(volunteeringData, setVopps), [])
 
     return(
-        <Stack justifyContent="center" alignItems="center" spacing={3}>
+        <Stack justifyContent="center" alignItems="center" spacing={12}>
             {
                 vOpps
                 && vOpps.length>0

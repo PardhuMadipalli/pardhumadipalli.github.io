@@ -13,23 +13,46 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {
   green,
   // purple,
-  grey
+  // grey
 } from '@mui/material/colors';
 import CssBaseline from "@mui/material/CssBaseline";
 import {fetchDataAndUpdateItems} from "./commons/commons";
 import pubData from "./content/publications.yml";
-const theme = createTheme({
+// const lightTheme = createTheme({
+//   palette: {
+//     primary: {
+//       main: '#639',
+//     },
+//     secondary: {
+//       main: green[600],
+//     },
+//     background: {
+//       default: grey[100],
+//       // paper: '#221212',
+//     },
+//   },
+// });
+
+const darkTheme = createTheme({
   palette: {
+    mode:'dark',
     primary: {
-      main: '#639',
+      // main: 'rgba(129, 140, 248, 1)',
+      main: 'rgba(129, 140, 248, 1)',
+      contrastText: 'white'
     },
     secondary: {
       main: green[600],
     },
     background: {
-      default: grey[100],
-      // paper: '#221212',
+      default: 'rgba(0,0,0,0.95)',
+      paper: 'rgba(12, 12, 12, 0.8)',
+      // paper: 'rgba(0, 0, 0, 0.3)',
     },
+    text: {
+      primary: 'rgba(255, 255, 255, 1)'
+    },
+    footer: 'rgba(0,0,0, 0.95)'
   },
 });
 
@@ -56,7 +79,7 @@ function App() {
   React.useEffect(fetchDataAndUpdateItems(pubData, setPubItems), [])
 
   return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <BrowserRouter>
           {/* <SkeletonPage> */}
