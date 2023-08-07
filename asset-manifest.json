@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab26e4cf.css",
-    "main.js": "/static/js/main.3ea977aa.js",
+    "main.css": "/static/css/main.32d56e77.css",
+    "main.js": "/static/js/main.87fab38f.js",
     "static/js/787.b2e57314.chunk.js": "/static/js/787.b2e57314.chunk.js",
     "static/media/elsevier.webp": "/static/media/elsevier.24c413a4ad51c8a0387e.webp",
     "static/media/footerIcons.yml": "/static/media/footerIcons.a3003cb62d9f6763a693.yml",
@@ -14,12 +14,12 @@
     "static/media/education.yml": "/static/media/education.adaeb32f9c0f8f7a66d4.yml",
     "static/media/skills.yml": "/static/media/skills.b77b38cacbba68ba1512.yml",
     "static/media/menuElements.yml": "/static/media/menuElements.6df3ce63588be7da98fe.yml",
-    "main.ab26e4cf.css.map": "/static/css/main.ab26e4cf.css.map",
-    "main.3ea977aa.js.map": "/static/js/main.3ea977aa.js.map",
+    "main.32d56e77.css.map": "/static/css/main.32d56e77.css.map",
+    "main.87fab38f.js.map": "/static/js/main.87fab38f.js.map",
     "787.b2e57314.chunk.js.map": "/static/js/787.b2e57314.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab26e4cf.css",
-    "static/js/main.3ea977aa.js"
+    "static/css/main.32d56e77.css",
+    "static/js/main.87fab38f.js"
   ]
 }
