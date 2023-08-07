@@ -14,12 +14,17 @@ function FooterSocialIcon({imgSrc, linkUrl, label}) {
 export default function FooterIcons({iconDetailsList}) {
     return (
         <>
-        <Stack direction="row" spacing={{ xs: 1, sm: 2, md: 4 }} 
+        <Stack direction="row" spacing={{ xs: 3, md: 4 }}
             py={1}
             alignItems="center" 
             justifyContent="center">
             {iconDetailsList.map((socialIcon, i) => 
-                <FooterSocialIcon imgSrc={socialIcon.imgSrc} linkUrl={socialIcon.linkUrl} label={socialIcon.label} key={i}/>)}
+                <FooterSocialIcon imgSrc={socialIcon.imgSrc}
+                                  linkUrl={socialIcon.linkUrl}
+                                  label={socialIcon.label}
+                                  key={i}
+                />
+            )}
         </Stack>
         </>
     )
