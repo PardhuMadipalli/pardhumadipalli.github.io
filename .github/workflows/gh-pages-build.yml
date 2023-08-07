@@ -1,16 +1,16 @@
-name: Deploy React Application
+name: Build and test React Application
 
 # Controls when the action will run.
 on:
-  # Triggers the workflow on push events but only for the main branch
-  push:
+  # Triggers the workflow on pull request events but only for the main branch
+  pull_request:
     branches: [ main ]
     paths-ignore:
       - README.md
       - README
       - .gitignore
 
-      # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build_test:
     # The type of runner that the job will run on
@@ -34,9 +34,4 @@ jobs:
       - name: npm ci, build and test
         run: |
           npm ci
-          npm run build --if-present
-      - name: deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./build
+          npm run build
