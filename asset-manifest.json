@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.32d56e77.css",
-    "main.js": "/static/js/main.6e12ec01.js",
-    "static/js/787.b2e57314.chunk.js": "/static/js/787.b2e57314.chunk.js",
+    "main.js": "/static/js/main.62456563.js",
+    "static/js/496.ce4d283e.chunk.js": "/static/js/496.ce4d283e.chunk.js",
     "static/media/elsevier.webp": "/static/media/elsevier.24c413a4ad51c8a0387e.webp",
     "static/media/footerIcons.yml": "/static/media/footerIcons.a3003cb62d9f6763a693.yml",
     "static/media/ieee.webp": "/static/media/ieee.4ae5b30ecdac8f9d7d09.webp",
@@ -15,11 +15,11 @@
     "static/media/skills.yml": "/static/media/skills.b77b38cacbba68ba1512.yml",
     "static/media/menuElements.yml": "/static/media/menuElements.6df3ce63588be7da98fe.yml",
     "main.32d56e77.css.map": "/static/css/main.32d56e77.css.map",
-    "main.6e12ec01.js.map": "/static/js/main.6e12ec01.js.map",
-    "787.b2e57314.chunk.js.map": "/static/js/787.b2e57314.chunk.js.map"
+    "main.62456563.js.map": "/static/js/main.62456563.js.map",
+    "496.ce4d283e.chunk.js.map": "/static/js/496.ce4d283e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32d56e77.css",
-    "static/js/main.6e12ec01.js"
+    "static/js/main.62456563.js"
   ]
 }
