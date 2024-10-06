@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.32d56e77.css",
-    "main.js": "/static/js/main.62456563.js",
+    "main.js": "/static/js/main.8dcd3bdd.js",
     "static/js/496.ce4d283e.chunk.js": "/static/js/496.ce4d283e.chunk.js",
     "static/media/elsevier.webp": "/static/media/elsevier.24c413a4ad51c8a0387e.webp",
-    "static/media/footerIcons.yml": "/static/media/footerIcons.a3003cb62d9f6763a693.yml",
+    "static/media/footerIcons.yml": "/static/media/footerIcons.2068ac54115de65d3284.yml",
     "static/media/ieee.webp": "/static/media/ieee.4ae5b30ecdac8f9d7d09.webp",
     "static/media/publications.yml": "/static/media/publications.40cde018b6f5be65b5a8.yml",
     "static/media/experience.yml": "/static/media/experience.f9cfd9c6bf07a732e279.yml",
-    "static/media/volunteering.yml": "/static/media/volunteering.766371ca370e11f05f4d.yml",
-    "static/media/homepage.yml": "/static/media/homepage.453e2b34b09bb83a01fb.yml",
+    "static/media/volunteering.yml": "/static/media/volunteering.76e2db99de16c0c8de9e.yml",
+    "static/media/homepage.yml": "/static/media/homepage.d24e68a6483dcdd56138.yml",
     "index.html": "/index.html",
     "static/media/education.yml": "/static/media/education.adaeb32f9c0f8f7a66d4.yml",
     "static/media/skills.yml": "/static/media/skills.b77b38cacbba68ba1512.yml",
     "static/media/menuElements.yml": "/static/media/menuElements.6df3ce63588be7da98fe.yml",
     "main.32d56e77.css.map": "/static/css/main.32d56e77.css.map",
-    "main.62456563.js.map": "/static/js/main.62456563.js.map",
+    "main.8dcd3bdd.js.map": "/static/js/main.8dcd3bdd.js.map",
     "496.ce4d283e.chunk.js.map": "/static/js/496.ce4d283e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32d56e77.css",
-    "static/js/main.62456563.js"
+    "static/js/main.8dcd3bdd.js"
   ]
 }
