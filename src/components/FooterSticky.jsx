@@ -5,19 +5,15 @@ import FooterIcons from './FooterIcons';
 
 function Copyright() {
   return (
-    <>
-    <Typography variant="body2">
-      {'Copyright © '}
-    {/* </Typography>
-    <Typography variant="body1">   */}
-    <Link color="inherit" href="/" sx={{fontWeight: 'bold'}} underline="hover">
-        Pardhu Madipalli
-    </Link>{' '}
-    {/* </Typography>
-    <Typography variant="body2"> */}
-      {new Date().getFullYear()}
-    </Typography>
-    </>
+        <Typography variant="body2" fontSize='0.8rem'>
+            {'Copyright © '}
+
+            <Link color="inherit" href="/" sx={{fontWeight: 'bold'}} underline="hover">
+                Pardhu Madipalli
+            </Link>{' '}
+
+            {new Date().getFullYear()}
+        </Typography>
   );
 }
 

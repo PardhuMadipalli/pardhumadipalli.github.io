@@ -2,9 +2,9 @@ data:
   mainItems:
     - key: software
       title: Software Engineering
-      subtitle: Five years experience
+      subtitle: Number_of_years years experience
       text:
-        - Working as a cloud full stack developer for more than 4 years. Over this time, I have worked on very diverse areas including web server technologies, cloud infrastructure and applications, and, UI.
+        - Working as a cloud full stack developer for more than Number_of_years years. Over this time, I have worked on very diverse areas including web server technologies, cloud infrastructure and applications, and, UI.
         - I've made contributions to several projects using technologies such as NodeJS, docker, and maven in my free time. I also have a very fair understanding of data science by working on multiple college projects.
       link: "/work"
       linkTitle: Work Profile

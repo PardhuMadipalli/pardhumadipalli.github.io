@@ -11,6 +11,7 @@ data:
       - |
         Anybody can enter a url into our site and verify if it is blocked by any ISP in India.
     imageUrl: /vol/software-developer.png
+#    imageUrl: /vol/software.png
   - position: Teacher, Volunteer recruiter
     org: 
       name: eVidyaloka

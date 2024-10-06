@@ -16,6 +16,7 @@ import {
 } from "@mui/material/styles";
 import {WorkOutline as WorkIcon, VolunteerActivismOutlined as VolunteerIcon} from "@mui/icons-material";
 import {fetchDataAndUpdateItems} from "../commons/commons";
+import {capitalizeFirstLetter, replacePlaceHolders} from "../commons/helpers";
 // import { green, purple, grey } from '@mui/material/colors';
 
 const StyledBox = styled(Grid)(({ theme }) => ({
@@ -97,6 +98,9 @@ const itemIconMap = {
 }
 
 const HomePage = () => {
+    const placeHoldersMap = new Map()
+    placeHoldersMap.set('Number_of_years',
+        numberInWords[new Date().getFullYear() - new Date(2018, 6, 25).getFullYear()])
     const [data, setData] = React.useState()
     React.useEffect(fetchDataAndUpdateItems(homePageFile, setData), [])
     return (
@@ -107,10 +111,11 @@ const HomePage = () => {
                     data.mainItems.map((item, i) =>
                     <IntroductionComp key={i}
                                       title={item.title}
-                                      subtitle={item.subtitle}
+                                      subtitle={capitalizeFirstLetter(replacePlaceHolders(item.subtitle, placeHoldersMap))}
                                       linkName={item.linkTitle}
                                       linkUrl={item.link}
-                                      text={item.text}
+                                      text={item.text.map(line => replacePlaceHolders(line, placeHoldersMap))}
+                                      // text={item.text}
                                       icon={itemIconMap[item.key]} />
                     )
                 }
@@ -143,4 +148,5 @@ const HomePage = () => {
     )
 }
 
+const numberInWords = ['', 'one', 'Two', 'Three', 'Four', 'Five', 'six', 'seven', 'eight', 'nine']
 export default HomePage
